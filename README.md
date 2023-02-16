@@ -7,7 +7,7 @@ BandHop - Find your stage anywhere - A music association that connects musicians
 
 3. Find fonts , icons and images.
 
-4. Organize the folders projects (html,sass,assets)
+4. Organize the folders project (html,sass,assets)
 
 4. Html structure
 
