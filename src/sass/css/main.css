@@ -10,10 +10,14 @@ ul {
 }
 
 html {
-  background-color: #181818;
+  background: url(../../assets/images/hero-home.jpeg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 body {
+  height: 100dvh;
+  background-color: rgba(0, 0, 0, 0.582);
   font-size: 1rem;
 }
 
@@ -23,37 +27,56 @@ body {
 
 .header_brand {
   color: rgb(231, 231, 231);
+  padding-top: 5px;
+  letter-spacing: 1.5px;
 }
-.header_brand span {
+.header_brand span.H {
   color: rgb(0, 231, 143);
   position: relative;
 }
-.header_brand span::before {
+.header_brand span.H::before {
   content: "''";
   position: absolute;
   top: -3px;
   left: -5px;
   font-size: large;
 }
-.header_brand span::after {
+.header_brand span.H::after {
   content: "''";
   position: absolute;
   top: -3px;
   left: 10px;
   font-size: large;
 }
+.header_brand span {
+  font-size: 120%;
+}
+
+.btn_cta {
+  font-size: large;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 2px solid rgb(231, 231, 231);
+  border-radius: 12px;
+  padding: 5px 10px;
+  font-weight: 600;
+  background-color: #181818;
+  color: rgb(0, 231, 143);
+  display: none;
+}
 
 .header_toggle-menu {
   width: 35px;
-  height: 40px;
+  height: 25px;
   display: block;
   order: 4;
   display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-evenly;
+  align-items: flex-start;
+  justify-content: space-between;
   flex-direction: column;
   z-index: 10;
+  cursor: pointer;
 }
 .header_toggle-menu_line {
   width: 100%;
@@ -64,13 +87,13 @@ body {
 }
 
 input#header_toggle-menu:checked + .header_toggle-menu > .header_toggle-menu_line--top {
-  transform: rotate(-45deg) translateX(-13px);
+  transform: rotate(-45deg) translateY(7px) translateX(-5px);
 }
 input#header_toggle-menu:checked + .header_toggle-menu > .header_toggle-menu_line--middle {
   opacity: 0;
 }
 input#header_toggle-menu:checked + .header_toggle-menu > .header_toggle-menu_line--bottom {
-  transform: rotate(45deg) translateX(-13px) translateY(-2px);
+  transform: rotate(45deg) translateX(-7px) translateY(-10px);
 }
 
 input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
@@ -84,7 +107,8 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  padding: 10px;
+  padding: 10px 15px;
+  background-color: #181818;
 }
 
 .header_nav_list {

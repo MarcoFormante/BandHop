@@ -1,8 +1,13 @@
 html{
-   background-color: $black-color;
+   background: url(../../assets/images/hero-home.jpeg) no-repeat center center;
+   background-size: cover;
+   background-attachment: fixed;
+   
 }
 
 
 body{
+    height: 100dvh;
+    background-color: rgba(0, 0, 0, 0.582);
     font-size: 1rem;
 }

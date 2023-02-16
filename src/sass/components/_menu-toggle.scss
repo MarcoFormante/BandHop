@@ -2,13 +2,16 @@
 .header_toggle-menu{
 
     width: 35px;
-    height: 40px;
+    height: 25px;
     display: block;
     order: 4;
-    @include flex-align-center-row;
-    justify-content: space-evenly;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
     flex-direction: column;
     z-index: 10;
+    cursor: pointer;
+    
 
         &_line{
             width: 100%;
@@ -29,7 +32,7 @@ input#header_toggle-menu:checked + .header_toggle-menu > .header_toggle-menu_lin
     //Menu Lines (top, middle, bottom)
         &--top{
             
-            transform: rotate(-45deg)translateX(-13px);
+            transform: rotate(-45deg) translateY(7px)translateX(-5px);
         }
 
 
@@ -40,7 +43,7 @@ input#header_toggle-menu:checked + .header_toggle-menu > .header_toggle-menu_lin
 
 
         &--bottom{
-            transform: rotate(45deg) translateX(-13px) translateY(-2px)
+            transform: rotate(45deg) translateX(-7px) translateY(-10px);
         }
         
         

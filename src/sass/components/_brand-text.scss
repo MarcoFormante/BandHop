@@ -3,13 +3,14 @@
     .header_brand{
 
         color: $white-color;
-
+        padding-top: 5px;
+        letter-spacing: 1.5px;
 
             // H lettre in Brand Text "bandHop"
-            span{
+            span.H{
                 color: $brand-color;
                 position: relative;
-
+               
 
                 //Double quote for H lettre  ::before
                     &::before{
@@ -34,7 +35,14 @@
                     
                     }
 
-
-
             }
+
+            span{
+                font-size: 120%;
+
+                    
+            }
+
+            
 }
+
