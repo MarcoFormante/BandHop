@@ -1,0 +1,60 @@
+// Menu Btn toggle , visible only on mobile
+.header_toggle-menu{
+
+    width: 35px;
+    height: 40px;
+    display: block;
+    order: 4;
+    @include flex-align-center-row;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: 10;
+
+        &_line{
+            width: 100%;
+            height: 3px;
+            background-color: $brand-color;
+            display: block;
+            transition: all 0.3s ease-in-out;
+        }
+}
+
+
+// When Menu Btn is Clicked , all lines will do the animation      
+// Menu Btn is a INPUT checkbox label
+
+input#header_toggle-menu:checked + .header_toggle-menu > .header_toggle-menu_line{
+    
+
+    //Menu Lines (top, middle, bottom)
+        &--top{
+            
+            transform: rotate(-45deg)translateX(-13px);
+        }
+
+
+        &--middle{
+           opacity: 0;
+           
+        }
+
+
+        &--bottom{
+            transform: rotate(45deg) translateX(-13px) translateY(-2px)
+        }
+        
+        
+       
+
+
+
+}
+
+
+
+
+input#header_toggle-menu:checked ~ .header_nav > .header_nav_list{
+
+    height: 100dvh;
+    
+}

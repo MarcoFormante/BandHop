@@ -1,25 +1,49 @@
 .header_nav{
-   
+
         //Nav-list (ul)
         &_list{
+            overflow: hidden;
             position: absolute;
-            top: 100%;
+            top: 0;
             left: 0;
-            display: block;
             width: 100vw;
             text-align: center;
+            height: 100vh;
+            background-color: $black-color;
+            @include flex-align-center-row;
+            justify-content: center;
+            flex-direction: column;
+            height: 0;
+            transition: height 0.7s ease;
+
             
             //Nav_item (li)
                 &_item{
                     background-color: darken($brand-color,10);
-                    padding: 10px;
+                    width: 100vw;
 
 
                     //Nav_item (odd)
                         &:nth-child(odd){
-                            background-color: lighten($black-color,10);
+                        background-color: lighten($black-color,5);
                         }
+    
 
+
+                    //Nav_link (a)
+                        &_link{
+                            color: $white-color;
+                            text-decoration: none;
+                            font-size: 1.7em;
+                            letter-spacing: 1px;
+                            display: block;
+                            padding: 15px;
+                            
+                        }
+                        
+
+                   
+                
                 }
 
         }
