@@ -1,5 +1,24 @@
-//test
+//abstract
 
-body{
-    background-color: bisque ;
-}
+@import '../abstract/abstract';
+
+
+//Reset 
+
+@import '../reset/reset';
+
+
+//Tipography
+
+@import '../typography/typography';
+
+
+//components
+
+@import '../components/components';
+
+
+//layout
+
+@import '../layout/layout';
+
