@@ -19,6 +19,7 @@ body {
   height: 100dvh;
   background-color: rgba(0, 0, 0, 0.582);
   font-size: 1rem;
+  width: 100vw;
 }
 
 body {
@@ -188,4 +189,14 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
   .header_nav_list_item_link {
     font-size: 1.3em;
   }
+}
+
+.brand-slogan {
+  color: rgb(231, 231, 231);
+  width: 70px;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  padding: 15px;
+  font-size: 1.9em;
+  text-align: justify;
 }/*# sourceMappingURL=main.css.map */
