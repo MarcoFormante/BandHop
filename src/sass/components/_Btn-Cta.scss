@@ -9,6 +9,10 @@
     color: $brand-color;
     display: none;  
 
+        &--bottom{
+            display: block;
+        }
+
         &_link{
             text-decoration: none;
         }

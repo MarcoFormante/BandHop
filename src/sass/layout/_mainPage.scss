@@ -1,11 +1,133 @@
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    height: 90vh;
+    max-height: 90vh;
+    overflow-x: hidden; 
+    gap: 8vw;
+    padding: 20px 0;
+}
 
 .brand-slogan{
     color: $white-color;
-    width: 70px;
+    width: 30%;
     word-spacing: 2px;
     letter-spacing: 2px;
-    padding: 15px;
-    font-size: 1.9em;
-    text-align: justify;
+    padding: 0 15px;
+    font-size: 1.7em;
+    
+}
+
+
+
+.last-event{
+    width: 100vw;
+    height: 35vh;
+    margin-left: 10px;
+    max-height: 350px;
+    justify-self: flex-end;
+    justify-items: flex-end;
+    position: relative;
+
+       
+
+    .carousel-arrow-icon{
+        content: "";
+        width: 40px;
+        height: 40px;
+        background-color: aliceblue;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        animation: toggle-visibility 0.8s ease alternate infinite;
+    }
+
+
+
+    &_carousel{
+        width: fit-content;
+        scroll-snap-type: mandatory;
+        width: inherit;
+        height: inherit;
+        overflow-y: hidden;   
+      
+
+       
+         
+    }
+}
+
+
+
+
+.last-event_carousel_list{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    gap: 20px;
+   
+
+        
+    
+
+        &_item{
+            scroll-snap-align: start;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            flex-shrink: 0;
+            max-width: 400px;
+            max-height: 220px;
+
+                img{
+                    width: 90%;
+                    height: 100%;
+                    border-radius: 8px;
+                   
+                }
+        }
+}
+
+
+
+//Event Title + Location
+.last-event_title{
+    color: darken($white-color,15);
+    padding: 0 40px;
+    float: right;
+
+
+}
+
+
+//FigCaption
+
+.last-event-description{
+    padding-top: calc(40px + 2vw);
+    
+}
+
+.btn_cta--bottom{
+    box-shadow: 0 0 10px $brand-color;
+    background-color: rgba(18, 230, 99, 0.945);
+    color: $white-color;
+    font-size: calc(1vw + 1.3em);
+    margin: auto;
+}
+
+
+
+
+@keyframes toggle-visibility {
+
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+    
 }
