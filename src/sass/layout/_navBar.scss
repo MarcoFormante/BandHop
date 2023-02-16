@@ -1,0 +1,26 @@
+.header_nav{
+   
+        //Nav-list (ul)
+        &_list{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: block;
+            width: 100vw;
+            text-align: center;
+            
+            //Nav_item (li)
+                &_item{
+                    background-color: darken($brand-color,10);
+                    padding: 10px;
+
+
+                    //Nav_item (odd)
+                        &:nth-child(odd){
+                            background-color: lighten($black-color,10);
+                        }
+
+                }
+
+        }
+}

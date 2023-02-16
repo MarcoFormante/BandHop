@@ -1,1 +1,84 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  background-color: #181818;
+}
+
+body {
+  font-family: "Bebas Neue", cursive;
+}
+
+.header_brand {
+  color: rgb(231, 231, 231);
+}
+.header_brand span {
+  color: rgb(0, 231, 143);
+  position: relative;
+}
+.header_brand span::before {
+  content: "''";
+  position: absolute;
+  top: -3px;
+  left: -5px;
+  font-size: large;
+}
+.header_brand span::after {
+  content: "''";
+  position: absolute;
+  top: -3px;
+  left: 10px;
+  font-size: large;
+}
+
+.header_toggle-menu {
+  width: 40px;
+  height: 40px;
+  display: block;
+  order: 4;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.header_toggle-menu_line {
+  width: 40px;
+  height: 3px;
+  background-color: rgb(0, 231, 143);
+  display: block;
+}
+
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+}
+
+.header_nav_list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: block;
+  width: 100vw;
+  text-align: center;
+}
+.header_nav_list_item {
+  background-color: #00b46f;
+  padding: 10px;
+}
+.header_nav_list_item:nth-child(odd) {
+  background-color: #323232;
+}/*# sourceMappingURL=main.css.map */

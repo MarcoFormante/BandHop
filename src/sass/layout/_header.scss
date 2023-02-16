@@ -1,0 +1,8 @@
+
+.header{
+    height: 60px;
+    @include flex-align-center-row;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+}
