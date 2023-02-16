@@ -1,5 +1,6 @@
 .header_nav{
-
+    
+    height: 100%;
         //Nav-list (ul)
         &_list{
             overflow: hidden;
@@ -15,12 +16,29 @@
             flex-direction: column;
             height: 0;
             transition: height 0.7s ease;
+            background-color: black;
+
+        //Responsive min-width 769px
+            @media screen and (min-width:769px) {
+                flex-direction: row;
+                height: 100%;
+                width: 100%;
+                overflow: none;
+                position: static;
+                
+            }
 
             
             //Nav_item (li)
                 &_item{
                     background-color: darken($brand-color,10);
                     width: 100vw;
+
+                        
+
+                    @media screen and (min-width:769px) {
+                        width: fit-content;
+                    }
 
 
                     //Nav_item (odd)
@@ -37,8 +55,20 @@
                             font-size: 1.7em;
                             letter-spacing: 1px;
                             display: block;
-                            padding: 15px;
-                            
+                            padding: 10px 10px;
+                            min-width: 80px;
+
+                            //Link Current Page (Active)
+                                &--active{
+                                    text-decoration:underline; 
+                                }
+
+
+                        //Responsive min-width 769px
+                             @media screen and (min-width:769px) {
+                                font-size: 1.3em;
+                                
+                             }
                         }
                         
 
@@ -48,3 +78,6 @@
 
         }
 }
+
+
+

@@ -11,8 +11,14 @@
     flex-direction: column;
     z-index: 10;
     cursor: pointer;
-    
 
+
+        //Responsive Min-width 769px
+            @media screen and (min-width:769px) {
+                display: none;
+            }
+
+   
         &_line{
             width: 100%;
             height: 3px;
@@ -24,7 +30,7 @@
 
 
 // When Menu Btn is Clicked , all lines will do the animation      
-// Menu Btn is a INPUT checkbox label
+// Menu Btn is a INPUT checkbox Label
 
 input#header_toggle-menu:checked + .header_toggle-menu > .header_toggle-menu_line{
     
@@ -45,19 +51,19 @@ input#header_toggle-menu:checked + .header_toggle-menu > .header_toggle-menu_lin
         &--bottom{
             transform: rotate(45deg) translateX(-7px) translateY(-10px);
         }
-        
-        
-       
-
-
 
 }
 
 
-
-
+/// When Menu Button is clicked , the NavBar do the animation and show all links (height from 0 to 100vh)
 input#header_toggle-menu:checked ~ .header_nav > .header_nav_list{
 
     height: 100dvh;
+
+    //Responsive Min-width 769px
+        @media screen and (min-width:769px){
+            height: 100%;
+        }
     
 }
+

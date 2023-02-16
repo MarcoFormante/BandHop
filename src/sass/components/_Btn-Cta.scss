@@ -7,5 +7,17 @@
     font-weight: 600;
     background-color: $black-color;
     color: $brand-color;
-    display: none;
+    display: none;  
+
+        &_link{
+            text-decoration: none;
+        }
+    
+}
+
+
+@media screen and (min-width:769px){
+    .btn_cta{
+        display: block;
+    }
 }

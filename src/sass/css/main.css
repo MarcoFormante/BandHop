@@ -65,7 +65,15 @@ body {
   color: rgb(0, 231, 143);
   display: none;
 }
+.btn_cta_link {
+  text-decoration: none;
+}
 
+@media screen and (min-width: 769px) {
+  .btn_cta {
+    display: block;
+  }
+}
 .header_toggle-menu {
   width: 35px;
   height: 25px;
@@ -77,6 +85,11 @@ body {
   flex-direction: column;
   z-index: 10;
   cursor: pointer;
+}
+@media screen and (min-width: 769px) {
+  .header_toggle-menu {
+    display: none;
+  }
 }
 .header_toggle-menu_line {
   width: 100%;
@@ -99,6 +112,11 @@ input#header_toggle-menu:checked + .header_toggle-menu > .header_toggle-menu_lin
 input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
   height: 100dvh;
 }
+@media screen and (min-width: 769px) {
+  input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
+    height: 100%;
+  }
+}
 
 .header {
   height: 60px;
@@ -111,6 +129,9 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
   background-color: #181818;
 }
 
+.header_nav {
+  height: 100%;
+}
 .header_nav_list {
   overflow: hidden;
   position: absolute;
@@ -127,10 +148,26 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
   flex-direction: column;
   height: 0;
   transition: height 0.7s ease;
+  background-color: black;
+}
+@media screen and (min-width: 769px) {
+  .header_nav_list {
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    overflow: none;
+    position: static;
+  }
 }
 .header_nav_list_item {
   background-color: #00b46f;
   width: 100vw;
+}
+@media screen and (min-width: 769px) {
+  .header_nav_list_item {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 .header_nav_list_item:nth-child(odd) {
   background-color: #252525;
@@ -141,5 +178,14 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
   font-size: 1.7em;
   letter-spacing: 1px;
   display: block;
-  padding: 15px;
+  padding: 10px 10px;
+  min-width: 80px;
+}
+.header_nav_list_item_link--active {
+  text-decoration: underline;
+}
+@media screen and (min-width: 769px) {
+  .header_nav_list_item_link {
+    font-size: 1.3em;
+  }
 }/*# sourceMappingURL=main.css.map */
