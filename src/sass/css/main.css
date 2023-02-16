@@ -198,6 +198,10 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
   }
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 main {
   display: flex;
   flex-direction: column;
