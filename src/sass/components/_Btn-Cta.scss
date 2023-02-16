@@ -5,13 +5,18 @@
     border-radius: 12px;
     padding: 5px 10px;
     font-weight: 600;
-    background-color: $black-color;
-    color: $brand-color;
+    box-shadow: 0 0 20px $brand-color;
+    background-color: $brand-color;
+    color: $white-color;
     display: none;  
+
 
         &--bottom{
             display: block;
+            font-size: calc(1vw + 1.3em);
+            margin: 20px auto;
         }
+
 
         &_link{
             text-decoration: none;
@@ -20,8 +25,16 @@
 }
 
 
+//Responsive Min-width:769px
 @media screen and (min-width:769px){
     .btn_cta{
         display: block;
     }
 }
+
+
+
+   
+    
+   
+   

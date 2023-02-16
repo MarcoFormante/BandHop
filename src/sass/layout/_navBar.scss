@@ -1,5 +1,5 @@
 .header_nav{
-    
+    z-index: 9;
     height: 100%;
         //Nav-list (ul)
         &_list{
@@ -31,7 +31,7 @@
             
             //Nav_item (li)
                 &_item{
-                    background-color: darken($brand-color,10);
+                    background-color: $brand-color;
                     width: 100vw;
 
                         
