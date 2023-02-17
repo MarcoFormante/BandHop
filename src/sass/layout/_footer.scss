@@ -1,0 +1,11 @@
+.footer{
+    background-color: $black-color;
+    height: 50px;
+}
+
+
+.social-list{
+    @include flex-center(row);
+    gap: 5vw;
+    height: 100%;
+}
