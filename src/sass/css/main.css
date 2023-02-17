@@ -219,7 +219,8 @@ main {
   word-spacing: 2px;
   letter-spacing: 5px;
   padding: 0 15px;
-  font-size: 1.7em;
+  font-size: calc(1.2em + 4vw);
+  text-shadow: 4px 1px 1px rgba(219, 6, 59, 0.4235294118);
 }
 
 .last-event {
@@ -265,6 +266,7 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
   flex-shrink: 0;
+  max-width: 450px;
 }
 .last-event_carousel_list_item img {
   width: 90%;
