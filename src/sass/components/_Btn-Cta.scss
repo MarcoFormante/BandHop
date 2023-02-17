@@ -9,6 +9,7 @@
     background-color: $brand-color;
     color: $white-color;
     display: none;  
+    cursor: pointer;
     
 
         @media screen and (min-width:769px){
@@ -32,6 +33,7 @@
 
         &_link{
             text-decoration: none;
+           
         }
     
 }

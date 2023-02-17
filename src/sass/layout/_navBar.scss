@@ -60,6 +60,7 @@
                             display: block;
                             padding: 10px 10px;
                             min-width: 80px;
+                            
 
 
                             //Link Current Page (Active)
@@ -70,8 +71,8 @@
 
                         //Responsive min-width 769px Nav-links (a)
                              @media screen and (min-width:769px) {
-                                font-size: 1.3em;
-                                
+                                font-size: calc(0.5em + 1vw);
+                               
                              }
                         }
                         
