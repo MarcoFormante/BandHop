@@ -9,12 +9,24 @@
     background-color: $brand-color;
     color: $white-color;
     display: none;  
+    
+
+        @media screen and (min-width:769px){
+            display: block; 
+        }
+
 
 
         &--bottom{
             display: block;
             font-size: calc(1vw + 1.3em);
             margin: 20px auto;
+
+        
+                @media screen and (min-width:769px) {
+                    display: none;
+                }
+
         }
 
 
@@ -26,11 +38,7 @@
 
 
 //Responsive Min-width:769px
-@media screen and (min-width:769px){
-    .btn_cta{
-        display: block;
-    }
-}
+
 
 
 

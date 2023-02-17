@@ -8,6 +8,16 @@ main.main_home-page{
     width: 100vw;
     overflow: hidden;
     padding: 40px 0;
+
+
+        @media screen and (min-width:769px) {
+            
+            max-width: 100vw;
+            margin: auto;
+            align-items: center;
+            justify-content: baseline;
+        
+        }
 }
 
 
@@ -19,8 +29,37 @@ main.main_home-page{
     letter-spacing: 5px;
     padding: 0 15px;
     font-size: calc(1.2em + 4vw);
-    text-shadow: 4px 1px 1px #db063b6c ;
-}   
+    text-shadow: 4px 1px 1px #db063b6c;
+    z-index: 8;
+
+
+        @media screen and (min-width:769px) {
+           width: 100vw;
+           height: fit-content;
+           letter-spacing: 5px;
+           border: 1px solid rgb(199, 157, 204);
+           border-left: none;
+           border-right: none;
+           
+        }
+    }   
+
+
+   .section-list{
+    width: 100%;
+    background-color: antiquewhite;
+    height: 300px;
+
+
+
+
+
+
+    
+    img{
+        width: 0%;
+    }
+   }
 
 
 
