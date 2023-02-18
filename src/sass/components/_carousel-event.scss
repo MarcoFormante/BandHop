@@ -79,7 +79,7 @@
             
 
             @media screen and (min-width:769px) and (max-width:992px) {
-                max-width: 45%;
+                max-width: 40%;
                 flex: 0 0 100%;
             }
 
@@ -104,12 +104,16 @@
                 }
 
 
-
+            //FigureCaption
                 &_service-caption{
                         color: $white-color;
                         text-align: center;
                         font-size: calc(110% + 1vw);
                         padding:2px;
+
+                            @media screen and (max-width:768px) {
+                                font-size: 1.9em;
+                            }
                         
                 }
         }

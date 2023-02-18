@@ -11,6 +11,7 @@
     display: none;  
     cursor: pointer;
     transition: all 0.2s ease;
+    
 
         &:active{
             color: $brand-color;
@@ -40,7 +41,15 @@
 
         &_link{
             text-decoration: none;
-           
+
+
+                @media screen and (max-width:769px) {
+                    
+                    width: 200px;
+                    margin: 10px auto;
+                  
+                }
+          
         }
     
 }

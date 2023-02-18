@@ -24,6 +24,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+@media screen and (orientation: landscape) {
+  body {
+    height: auto;
+  }
+}
 
 body {
   font-family: "Bebas Neue", cursive;
@@ -31,6 +36,8 @@ body {
 
 .brand-link {
   text-decoration: none;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 
 .header_brand {
@@ -98,6 +105,12 @@ body {
 }
 .btn_cta_link {
   text-decoration: none;
+}
+@media screen and (max-width: 769px) {
+  .btn_cta_link {
+    width: 200px;
+    margin: 10px auto;
+  }
 }
 
 .header_toggle-menu {
@@ -211,7 +224,7 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
   .event_carousel_list_item {
-    max-width: 45%;
+    max-width: 40%;
     flex: 0 0 100%;
   }
 }
@@ -236,6 +249,11 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
   text-align: center;
   font-size: calc(110% + 1vw);
   padding: 2px;
+}
+@media screen and (max-width: 768px) {
+  .event_carousel_list_item_service-caption {
+    font-size: 1.9em;
+  }
 }
 
 figure {
@@ -328,7 +346,7 @@ figure p {
   }
 }
 .header_nav_list_item {
-  background-color: rgba(172, 172, 172, 0.342);
+  background-color: rgba(155, 151, 151, 0.342);
   width: 100vw;
   transition: opacity 0.3s ease;
 }
