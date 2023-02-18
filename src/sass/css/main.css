@@ -186,7 +186,7 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
   right: 20px;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  animation: toggle-visibility 0.6s ease alternate 10;
+  animation: toggle-visibility 0.6s ease alternate 20;
   opacity: 0;
   display: none;
 }
