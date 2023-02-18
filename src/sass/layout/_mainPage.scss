@@ -33,7 +33,7 @@ main.main_home-page{
 
 
 
-        @media screen and (min-width:769px) {
+        @media screen and (min-width:414px) {
            width: 100vw;
            height: fit-content;
            letter-spacing: 5px;
@@ -42,6 +42,15 @@ main.main_home-page{
            border-right: none;
            background-color: rgba(0, 0, 0, 0.267);
 
+        }
+
+
+        @media screen and (max-width:413px) {
+            font-size: 1.4em;
+        }
+
+        @media screen and (max-width:320px) {
+            font-size: 1em;
         }
     }
 

@@ -25,6 +25,7 @@
             background-color: $brand-color;
             display: block;
             transition: all 0.3s ease-in-out;
+            min-width: 30px;
         }
 }
 
@@ -69,4 +70,6 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list{
         }
     
 }
+
+
 
