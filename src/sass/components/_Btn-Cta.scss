@@ -10,6 +10,12 @@
     color: $white-color;
     display: none;  
     cursor: pointer;
+    transition: all 0.2s ease;
+
+        &:active{
+            color: $brand-color;
+            background-color: $white-color;
+        }
     
 
         @media screen and (min-width:769px){
