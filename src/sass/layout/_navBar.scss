@@ -20,7 +20,7 @@
             transition: height 0.7s ease;
             background-color: black;
 
-
+               
 
         //Responsive min-width 769px
             @media screen and (min-width:769px) {
@@ -35,19 +35,31 @@
             
             //Nav_list-item (li)
                 &_item{
-                    background-color: $brand-color;
+                    background-color: rgba(172, 172, 172, 0.342);
                     width: 100vw;
+                    transition: opacity 0.3s ease;
+
+                        &:hover{
+                            
+                            opacity: 0.8;
+                        }
 
                         
                     //Responsive Nav-list-item (li) min-width:769px
                     @media screen and (min-width:769px) {
-                        width: fit-content;
+                       width:80px;
+                       background-color: darken($brand-color,0);
                     }
+
+                    @media screen and (min-width:992px) {
+                        width:fit-content;
+                     }
 
 
                     //Nav_item (odd)
                         &:nth-child(odd){
-                        background-color: lighten($black-color,5);
+                            background-color: rgba(0, 0, 0, 0.986);
+                        // background-color: lighten($black-color,5);
                         }
     
 

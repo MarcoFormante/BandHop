@@ -2,7 +2,7 @@
     font-size: large;
     appearance: none;
     border: 2px solid $white-color;
-    border-radius: 12px;
+    border-radius: 8px;
     padding: 5px 10px;
     font-weight: 600;
     box-shadow: 0 0 20px $brand-color;
@@ -20,6 +20,7 @@
 
         @media screen and (min-width:769px){
             display: block; 
+            font-size: 1.4em;
         }
 
 
@@ -27,7 +28,7 @@
         &--bottom{
             display: block;
             font-size: calc(1vw + 1.3em);
-            margin: 20px auto;
+            margin: 0px auto 10px;
 
         
                 @media screen and (min-width:769px) {
