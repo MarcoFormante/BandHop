@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 * {
   box-sizing: border-box;
@@ -7,32 +8,6 @@
 
 ul {
   list-style: none;
-}
-
-html {
-  background: url(../../assets/images/hero-home.jpeg) no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-body {
-  height: 100dvh;
-  background-color: rgba(0, 0, 0, 0.733);
-  font-size: 1rem;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-@media screen and (max-height: 600px) and (min-width: 769px) {
-  body {
-    height: auto;
-  }
-}
-@media screen and (min-height: 414px) and (min-width: 993px) {
-  body {
-    height: 100dvh;
-  }
 }
 
 body {
@@ -529,4 +504,96 @@ main.main_home-page {
   .hidden-mobile {
     display: none;
   }
+}
+
+html {
+  background: url(../../assets/images/hero-home.jpeg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body.home-page {
+  height: 100dvh;
+  background-color: rgba(0, 0, 0, 0.733);
+  font-size: 1rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-height: 600px) and (min-width: 769px) {
+  body.home-page {
+    height: auto;
+  }
+}
+@media screen and (min-height: 414px) and (min-width: 993px) {
+  body.home-page {
+    height: 100dvh;
+  }
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.815);
+  padding: 10px 0 0 15px;
+}
+
+.page-title_text {
+  color: rgb(231, 231, 231);
+  font-size: 2.5em;
+  letter-spacing: 5px;
+}
+.page-title_text_sub {
+  color: #b4b4b4;
+  font-weight: 300;
+}
+
+.section-contents {
+  padding-top: 25px;
+}
+
+.content-type_title {
+  color: rgba(113, 230, 102, 0.76);
+  font-size: 1.5em;
+}
+.content-type_title::before {
+  content: "- ";
+}
+
+.audition {
+  padding: 15px 0 0 15px;
+}
+.audition-location {
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: flex-end;
+  height: 30px;
+  width: 100px;
+}
+.audition-location::before {
+  content: "°";
+  padding-right: 3px;
+}
+.audition-location_flag {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  width: inherit;
+  height: 100%;
+  background-image: url(/src/assets/icons/france.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.audition_info_list {
+  padding: 10px 0 0 10px;
+}
+.audition_info_list_item {
+  padding: 7px;
+  color: rgb(231, 231, 231);
+  font-size: 1.15em;
+}
+.audition_info_list_item time, .audition_info_list_item a {
+  color: #c1c1c1;
+  padding-left: 1px;
 }/*# sourceMappingURL=main.css.map */

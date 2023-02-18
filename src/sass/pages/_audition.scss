@@ -1,0 +1,95 @@
+//Title of the Page
+
+main{
+    background-color: rgba(0, 0, 0, 0.815);
+    padding: 10px 0 0 15px;   
+}
+
+
+.page-title_text{
+    color: $white-color;
+    font-size: 2.5em;
+    letter-spacing: 5px;
+
+
+        &_sub{
+            color: darken($white-color,20);
+            font-weight: 300;
+        }
+}
+
+
+
+
+.section-contents{
+    padding-top: 25px;
+}
+
+
+
+  .content-type_title{
+      color:$brand-color;
+      font-size: 1.5em;
+          &::before{
+              content: "- ";
+          }
+  }
+
+
+///Article Audition
+  .audition{
+    padding: 15px 0 0 15px;
+
+        &-location{
+            color: rgb(255, 255, 255);
+            display: flex;
+            align-items: flex-end;
+            height: 30px;
+            width: 100px;
+            
+            
+
+            
+            
+                &::before{
+                    content:"°";
+                    padding-right: 3px;
+                }
+
+
+                &_flag{
+                    
+                    height: fit-content;
+                    margin: 0 auto;
+                    width: inherit;
+                    height: 100%;
+                    background-image: url(/src/assets/icons/france.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: top center;
+                
+                }
+        }
+
+        
+ 
+  }
+
+
+  .audition_info_list{
+    padding:10px 0 0 10px;
+
+            &_item{
+                padding: 7px;
+                color:$white-color;
+                font-size: 1.15em;
+
+                    time,a{
+                        color:darken($white-color,15);
+                        padding-left: 1px;
+                    }
+            }
+  }
+
+
+
