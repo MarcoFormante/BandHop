@@ -1,8 +1,27 @@
 //Title of the Page
+body.body-pages{
+    background-color: rgba(0, 0, 0, 0.616);
+}
+
+
 
 main.main_audition-page{
     background-color: rgba(0, 0, 0, 0.932);
     padding: 10px 15px;   
+
+        @media screen and (min-width:769px) {
+            padding: 10px 25px ;
+            width: 90%;
+            margin: auto;
+            position: relative;
+        }
+
+        @media screen and (min-width:992px) {
+          
+            width: 60%;
+          
+        }
+
 }
 
 
@@ -10,6 +29,7 @@ main.main_audition-page{
     color: $white-color;
     font-size: 2.5em;
     letter-spacing: 5px;
+    
 
 
         &_sub{
@@ -26,6 +46,14 @@ main.main_audition-page{
     width: fit-content;
     position: relative;
     margin: 40px auto;
+
+
+        @media screen and (min-width:769px) {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            margin: 0;
+        }
     
 
     label{
@@ -75,6 +103,10 @@ main.main_audition-page{
       color:$brand-color;
       font-size: 2.2em;
       margin-top: 20px;
+
+      @media screen and (min-width:769px) {
+        font-size: 2.5em;
+    }
       
 
 
@@ -136,6 +168,13 @@ main.main_audition-page{
                 padding: 7px;
                 color:$white-color;
                 font-size: calc(0.9em + 1vw);
+
+                @media screen and (min-width:769px) {
+                    font-size: 1.4em;
+                    letter-spacing: 2px;
+                }
+
+                    
                 
 
 

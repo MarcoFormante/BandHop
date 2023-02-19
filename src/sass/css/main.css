@@ -532,9 +532,26 @@ body.home-page {
   }
 }
 
+body.body-pages {
+  background-color: rgba(0, 0, 0, 0.616);
+}
+
 main.main_audition-page {
   background-color: rgba(0, 0, 0, 0.932);
   padding: 10px 15px;
+}
+@media screen and (min-width: 769px) {
+  main.main_audition-page {
+    padding: 10px 25px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+  }
+}
+@media screen and (min-width: 992px) {
+  main.main_audition-page {
+    width: 60%;
+  }
 }
 
 .page-title_text {
@@ -552,6 +569,14 @@ main.main_audition-page {
   width: fit-content;
   position: relative;
   margin: 40px auto;
+}
+@media screen and (min-width: 769px) {
+  .search-bar_section {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    margin: 0;
+  }
 }
 .search-bar_section label {
   display: block;
@@ -588,6 +613,11 @@ main.main_audition-page {
   color: rgba(113, 230, 102, 0.76);
   font-size: 2.2em;
   margin-top: 20px;
+}
+@media screen and (min-width: 769px) {
+  .content-type_title {
+    font-size: 2.5em;
+  }
 }
 .content-type_title::before {
   content: "- ";
@@ -627,6 +657,12 @@ main.main_audition-page {
   padding: 7px;
   color: rgb(231, 231, 231);
   font-size: calc(0.9em + 1vw);
+}
+@media screen and (min-width: 769px) {
+  .audition_info_list_item {
+    font-size: 1.4em;
+    letter-spacing: 2px;
+  }
 }
 .audition_info_list_item time, .audition_info_list_item a {
   color: #c1c1c1;
