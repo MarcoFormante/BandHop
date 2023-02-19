@@ -532,9 +532,9 @@ body.home-page {
   }
 }
 
-main {
-  background-color: rgba(0, 0, 0, 0.815);
-  padding: 10px 0 0 15px;
+main.main_audition-page {
+  background-color: rgba(0, 0, 0, 0.932);
+  padding: 10px 15px;
 }
 
 .page-title_text {
@@ -547,20 +547,55 @@ main {
   font-weight: 300;
 }
 
+.search-bar_section {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  margin: 40px auto;
+}
+.search-bar_section label {
+  display: block;
+  color: rgb(231, 231, 231);
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+.search-bar_section input {
+  height: 30px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 2px solid rgba(113, 230, 102, 0.76);
+  background-color: #181818;
+  color: rgb(231, 231, 231);
+  text-indent: 5px;
+  border-radius: 4px;
+}
+.search-bar_section .search-bar_icon {
+  position: absolute;
+  width: 30px;
+  height: 50%;
+  background: url(/src/assets/icons/search_icon.svg);
+  background-size: cover;
+  bottom: 5px;
+  right: 0px;
+}
+
 .section-contents {
   padding-top: 25px;
 }
 
 .content-type_title {
   color: rgba(113, 230, 102, 0.76);
-  font-size: 1.5em;
+  font-size: 2.2em;
+  margin-top: 20px;
 }
 .content-type_title::before {
   content: "- ";
 }
 
 .audition {
-  padding: 15px 0 0 15px;
+  padding: 10px 0 0 0px;
+  margin-top: 30px;
 }
 .audition-location {
   color: rgb(255, 255, 255);
@@ -591,9 +626,18 @@ main {
 .audition_info_list_item {
   padding: 7px;
   color: rgb(231, 231, 231);
-  font-size: 1.15em;
+  font-size: calc(0.9em + 1vw);
 }
 .audition_info_list_item time, .audition_info_list_item a {
   color: #c1c1c1;
   padding-left: 1px;
+}
+.audition_info_list_item address {
+  clear: both;
+  font-size: 1;
+}
+@media screen and (max-width: 350px) {
+  .audition_info_list_item address {
+    width: 70%;
+  }
 }/*# sourceMappingURL=main.css.map */

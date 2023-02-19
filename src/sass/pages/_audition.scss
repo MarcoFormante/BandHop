@@ -1,8 +1,8 @@
 //Title of the Page
 
-main{
-    background-color: rgba(0, 0, 0, 0.815);
-    padding: 10px 0 0 15px;   
+main.main_audition-page{
+    background-color: rgba(0, 0, 0, 0.932);
+    padding: 10px 15px;   
 }
 
 
@@ -20,6 +20,48 @@ main{
 
 
 
+.search-bar_section{
+   
+
+    width: fit-content;
+    position: relative;
+    margin: 40px auto;
+    
+
+    label{
+        display: block;
+        color: $white-color;
+        text-align: center;
+        letter-spacing: 1.2px;
+    }
+
+    input{
+        height: 30px;
+        appearance: none;
+        border: 2px solid $brand-color;
+        background-color: $black-color;
+        color: $white-color;
+        text-indent: 5px;
+        border-radius: 4px;
+    }
+
+
+    .search-bar_icon{
+        position: absolute;
+        width: 30px;
+        height: 50%;
+        background: url(/src/assets/icons/search_icon.svg);
+        background-size: cover;
+        bottom: 5px;
+        right: 0px;
+        
+    }
+
+}
+
+
+
+
 
 .section-contents{
     padding-top: 25px;
@@ -27,18 +69,28 @@ main{
 
 
 
-  .content-type_title{
+
+.content-type_title{
+
       color:$brand-color;
-      font-size: 1.5em;
-          &::before{
-              content: "- ";
-          }
-  }
+      font-size: 2.2em;
+      margin-top: 20px;
+      
+
+
+        &::before{
+                content: "- ";
+        }
+}
+
+
 
 
 ///Article Audition
   .audition{
-    padding: 15px 0 0 15px;
+    padding: 10px 0 0 0px;
+    margin-top: 30px;
+   
 
         &-location{
             color: rgb(255, 255, 255);
@@ -46,8 +98,6 @@ main{
             align-items: flex-end;
             height: 30px;
             width: 100px;
-            
-            
 
             
             
@@ -55,6 +105,7 @@ main{
                     content:"°";
                     padding-right: 3px;
                 }
+
 
 
                 &_flag{
@@ -70,26 +121,41 @@ main{
                 
                 }
         }
-
-        
- 
   }
 
 
-  .audition_info_list{
+
+
+
+.audition_info_list{
+    
     padding:10px 0 0 10px;
+
 
             &_item{
                 padding: 7px;
                 color:$white-color;
-                font-size: 1.15em;
+                font-size: calc(0.9em + 1vw);
+                
+
 
                     time,a{
                         color:darken($white-color,15);
                         padding-left: 1px;
                     }
+
+
+                    address{
+                        clear: both;
+                        font-size: 1;
+
+                            @media screen and (max-width:350px) {
+                                width: 70%;
+                            }
+                    }
             }
-  }
+
+}
 
 
 
