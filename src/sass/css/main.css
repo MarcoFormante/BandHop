@@ -54,6 +54,7 @@ body {
   color: rgb(231, 231, 231);
   padding-top: 5px;
   letter-spacing: 1.5px;
+  font-size: 2em;
 }
 .header_brand span.H {
   color: rgba(113, 230, 102, 0.76);
@@ -492,6 +493,7 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
   padding: 3%;
   text-align: left;
   letter-spacing: 0.5px;
+  width: 95%;
 }
 @media screen and (min-width: 769px) {
   .service-description {
