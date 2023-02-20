@@ -4,6 +4,9 @@
     @include flex-center(row);
     justify-content: space-between;
     padding: 10px;
+    position: fixed;
+    width: 100dvw;
+    bottom: 0;
    
     @media screen and (max-width:768px) {
         justify-content: center;

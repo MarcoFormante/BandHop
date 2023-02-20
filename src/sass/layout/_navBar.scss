@@ -39,6 +39,10 @@
                     background-color: rgba(155, 151, 151, 0.342);
                     width: 100vw;
                     transition: opacity 0.3s ease;
+
+                    &--green{
+                        background-color: $brand-color;
+                    }
                     
 
                         &:hover{
@@ -73,9 +77,9 @@
                             min-width: calc(80px - 2vw);
                             width: 100%;
                             font-size: 1.2em;
-                            
-                          
-                        
+
+
+
 
                             //Link Current Page (Active)
                                 &--active{
