@@ -526,12 +526,18 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
 
 .page-title_text {
   color: rgb(231, 231, 231);
-  font-size: 2.5em;
+  font-size: 2.8em;
   letter-spacing: 5px;
 }
 .page-title_text_sub {
   color: #b4b4b4;
   font-weight: 300;
+  font-size: 1.8em;
+}
+@media screen and (max-width: 320px) {
+  .page-title_text_sub {
+    font-size: 1.3em;
+  }
 }
 
 .search-bar_section {
@@ -620,6 +626,7 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
   padding: 7px;
   color: rgb(231, 231, 231);
   font-size: calc(0.9em + 1vw);
+  letter-spacing: 1.2px;
 }
 @media screen and (min-width: 769px) {
   .audition_info_list_item {
@@ -635,9 +642,9 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
   clear: both;
   font-size: 1;
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 320px) {
   .audition_info_list_item address {
-    width: 70%;
+    font-size: 1em;
   }
 }
 
@@ -648,6 +655,11 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
   transform: translateY(-50%);
   box-shadow: 0px 0px 8px rgb(231, 231, 231);
   animation: lightToggle 0.8s ease infinite alternate;
+}
+@media screen and (max-width: 320px) {
+  .audition_action-btn {
+    font-size: 0.6em;
+  }
 }
 
 @keyframes lightToggle {

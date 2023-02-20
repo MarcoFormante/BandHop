@@ -7,7 +7,7 @@
 
 .page-title_text{
     color: $white-color;
-    font-size: 2.5em;
+    font-size: 2.8em;
     letter-spacing: 5px;
     
 
@@ -15,6 +15,11 @@
         &_sub{
             color: darken($white-color,20);
             font-weight: 300;
+            font-size: 1.8em;
+
+                @media screen and (max-width:320px) {
+                    font-size: 1.3em;
+                }
         }
 }
 
@@ -140,6 +145,7 @@
                 padding: 7px;
                 color:$white-color;
                 font-size: calc(0.9em + 1vw);
+                letter-spacing: 1.2px;
 
                 @media screen and (min-width:769px) {
                     font-size: 1.4em;
@@ -153,6 +159,7 @@
                     time,a{
                         color:darken($white-color,15);
                         padding-left: 1px;
+                      
                     }
 
 
@@ -160,8 +167,8 @@
                         clear: both;
                         font-size: 1;
 
-                            @media screen and (max-width:350px) {
-                                width: 70%;
+                            @media screen and (max-width:320px) {
+                                font-size: 1em;
                             }
                     }
             }
@@ -176,7 +183,13 @@
     transform: translateY(-50%);
     box-shadow: 0px 0px 8px $white-color;
     animation: lightToggle 0.8s ease infinite alternate;
+
+        @media screen and (max-width:320px) {
+            font-size: 0.6em;
+        }
 }
+
+
 
 @keyframes lightToggle {
     from{
