@@ -530,15 +530,20 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
 .search-bar_section .search-bar_icon {
   position: absolute;
   width: 30px;
-  height: 50%;
+  height: 45%;
   background: url(/src/assets/icons/search_icon.svg);
   background-size: cover;
   bottom: 5px;
-  right: 0px;
+  right: 2px;
+  background-color: #181818;
 }
 
 .section-contents {
   padding-top: 25px;
+}
+
+.content {
+  padding-top: 20px;
 }
 
 .content-type_title {

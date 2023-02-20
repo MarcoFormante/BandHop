@@ -57,11 +57,12 @@
     .search-bar_icon{
         position: absolute;
         width: 30px;
-        height: 50%;
+        height: 45%;
         background: url(/src/assets/icons/search_icon.svg);
         background-size: cover;
         bottom: 5px;
-        right: 0px;
+        right: 2px;
+        background-color: $black-color;
         
     }
 
@@ -73,6 +74,10 @@
 
 .section-contents{
     padding-top: 25px;
+}
+
+.content{
+   padding-top: 20px;
 }
 
 
