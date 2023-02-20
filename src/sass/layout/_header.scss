@@ -9,6 +9,7 @@
     position: sticky;
     top: 0;
     z-index: 10;
+    position: relative;
     
 
 
@@ -31,3 +32,23 @@
    
     
 }
+
+
+
+.login-area{
+   
+        span{
+            width: 40px;
+            height: 40px;
+            background-image: url(/src/assets/icons/user\ \(2\).png);
+            background-size: cover;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: 70px;
+            
+        }
+    
+}
+

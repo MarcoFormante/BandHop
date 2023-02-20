@@ -187,6 +187,7 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
   position: sticky;
   top: 0;
   z-index: 10;
+  position: relative;
 }
 @media screen and (min-width: 769px) {
   .header {
@@ -200,6 +201,18 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
     margin: auto;
     max-width: 1500px;
   }
+}
+
+.login-area span {
+  width: 40px;
+  height: 40px;
+  background-image: url(/src/assets/icons/user\ \(2\).png);
+  background-size: cover;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 70px;
 }
 
 .header_nav {
@@ -238,7 +251,7 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
   width: 100vw;
   transition: opacity 0.3s ease;
 }
-.header_nav_list_item--green {
+.header_nav_list_item--active {
   background-color: rgba(113, 230, 102, 0.76);
 }
 .header_nav_list_item:hover {
@@ -250,8 +263,11 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
     width: fit-content;
   }
 }
-.header_nav_list_item:nth-child(odd) {
+.header_nav_list_item:not(.header_nav_list_item--active):nth-child(odd) {
   background-color: rgba(0, 0, 0, 0.986);
+}
+.header_nav_list_item--active {
+  color: rgba(113, 230, 102, 0.76);
 }
 .header_nav_list_item_link {
   color: rgb(231, 231, 231);
@@ -264,9 +280,6 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
   min-width: calc(80px - 2vw);
   width: 100%;
   font-size: 1.2em;
-}
-.header_nav_list_item_link--active {
-  text-decoration: underline;
 }
 @media screen and (max-width: 768px) {
   .header_nav_list_item_link {

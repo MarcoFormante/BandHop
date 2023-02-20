@@ -34,16 +34,16 @@
             }
 
             
+            
             //Nav_list-item (li)
                 &_item{
                     background-color: rgba(155, 151, 151, 0.342);
                     width: 100vw;
                     transition: opacity 0.3s ease;
 
-                    &--green{
-                        background-color: $brand-color;
-                    }
-                    
+                        &--active{
+                            background-color: $brand-color;
+                        }
 
                         &:hover{
                             opacity: 0.8;
@@ -59,11 +59,15 @@
                    
 
                     //Nav_item (odd)
-                        &:nth-child(odd){
+                        &:not(.header_nav_list_item--active):nth-child(odd){
+                        
                             background-color: rgba(0, 0, 0, 0.986);
                         // background-color: lighten($black-color,5);
                         }
-    
+
+                        &--active{
+                            color:$brand-color;
+                        }
 
 
                     //Nav_link (a)
@@ -82,9 +86,7 @@
 
 
                             //Link Current Page (Active)
-                                &--active{
-                                    text-decoration:underline; 
-                                }
+                                
 
 
                                 @media screen and (max-width:768px) {
@@ -109,3 +111,6 @@
 ::-webkit-scrollbar{
     display: none;
 }
+
+
+
