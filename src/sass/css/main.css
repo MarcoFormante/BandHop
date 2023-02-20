@@ -214,6 +214,11 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
   top: 0;
   right: 70px;
 }
+@media screen and (min-width: 768px) {
+  .login-area {
+    display: none;
+  }
+}
 
 .header_nav {
   z-index: 9;
