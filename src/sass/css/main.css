@@ -475,14 +475,14 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
     display: flex;
   }
 }
-.service .service-img {
+.service-img {
   width: 95%;
   box-shadow: 0 0 100px black;
   flex-shrink: 0;
   border-radius: 8px;
 }
 @media screen and (min-width: 769px) {
-  .service .service-img {
+  .service-img {
     width: 50%;
   }
 }
