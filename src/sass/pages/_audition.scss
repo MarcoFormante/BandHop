@@ -107,14 +107,14 @@
   .audition{
     padding: 10px 0 0 0px;
     margin-top: 30px;
+    position: relative;
    
 
         &-location{
             color: rgb(255, 255, 255);
-            display: flex;
-            align-items: flex-end;
-            height: 30px;
-            width: 100px;
+            font-size: 1.8em;
+            letter-spacing: 1.2px;
+
 
             
             
@@ -124,19 +124,6 @@
                 }
 
 
-
-                &_flag{
-                    
-                    height: fit-content;
-                    margin: 0 auto;
-                    width: inherit;
-                    height: 100%;
-                    background-image: url(/src/assets/icons/france.png);
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    background-position: top center;
-                
-                }
         }
   }
 
@@ -180,6 +167,27 @@
             }
 
 }
+
+
+.audition_action-btn{
+    position: absolute;
+    top:40%;
+    right: 10px;
+    transform: translateY(-50%);
+    box-shadow: 0px 0px 8px $white-color;
+    animation: lightToggle 0.8s ease infinite alternate;
+}
+
+@keyframes lightToggle {
+    from{
+        border-color: black;
+    }
+
+    to{
+        border-color: $white-color;
+    }
+}
+
 
 
 

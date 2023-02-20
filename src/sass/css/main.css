@@ -201,7 +201,6 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
   position: sticky;
   top: 0;
   z-index: 10;
-  position: relative;
 }
 @media screen and (min-width: 769px) {
   .header {
@@ -602,28 +601,16 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
 .audition {
   padding: 10px 0 0 0px;
   margin-top: 30px;
+  position: relative;
 }
 .audition-location {
   color: rgb(255, 255, 255);
-  display: flex;
-  align-items: flex-end;
-  height: 30px;
-  width: 100px;
+  font-size: 1.8em;
+  letter-spacing: 1.2px;
 }
 .audition-location::before {
   content: "°";
   padding-right: 3px;
-}
-.audition-location_flag {
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: 0 auto;
-  width: inherit;
-  height: 100%;
-  background-image: url(/src/assets/icons/france.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top center;
 }
 
 .audition_info_list {
@@ -651,5 +638,23 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
 @media screen and (max-width: 350px) {
   .audition_info_list_item address {
     width: 70%;
+  }
+}
+
+.audition_action-btn {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  transform: translateY(-50%);
+  box-shadow: 0px 0px 8px rgb(231, 231, 231);
+  animation: lightToggle 0.8s ease infinite alternate;
+}
+
+@keyframes lightToggle {
+  from {
+    border-color: black;
+  }
+  to {
+    border-color: rgb(231, 231, 231);
   }
 }/*# sourceMappingURL=main.css.map */
