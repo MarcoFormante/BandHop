@@ -64,14 +64,14 @@ body {
 .header_brand span.H::before {
   content: "''";
   position: absolute;
-  top: -3px;
+  top: -2px;
   left: -5px;
   font-size: large;
 }
 .header_brand span.H::after {
   content: "''";
   position: absolute;
-  top: -3px;
+  top: -2px;
   right: -5px;
   font-size: large;
 }
@@ -328,6 +328,21 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
   .footer {
     justify-content: center;
     padding: 0;
+  }
+}
+@media screen and (min-width: 769px) {
+  .footer {
+    width: 100dvw;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    width: 80dvw;
+    margin: auto;
+    max-width: 1500px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
