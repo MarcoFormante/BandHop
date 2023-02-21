@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Join our auditions and showcase your talent! 
-    Find out about upcoming audition dates and locations for various music genre, 
-    including rock, pop, jazz and more. Sign up now and get ready to rock the stage!">
+    <meta name="description" content="Discover all about our history,
+        our team and join us in our mission to make
+        live music accessible to all!">
+    <meta name="robots" content="index, follow">
+    <link rel="preload" href="src/sass/css/main.css" as="style">
     <link rel="stylesheet" href="src/sass/css/main.css">
     <title>BandHop - About us</title>
       
@@ -15,33 +17,31 @@
 <body class="body-pages">
 
     <header class="header">
+   
+             <!--Brand / logo name -->
+     
+             <a class="brand-link"  tabindex="1" href="index.html"><p class="header_brand"><span class="B"> B</span>and<span class="H">H</span>op</p></a>
 
-        <!-- Toggle Menu with checkBox to create animation without javascript // span tags for menu hamburger lines-->
+    <!-- Toggle Menu with checkBox to create animation without javascript // span tags for menu hamburger lines-->
      
              <input type="checkbox" hidden name="header_toggle-menu" id="header_toggle-menu">
-             <label for="header_toggle-menu" class="header_toggle-menu">
+             <label for="header_toggle-menu"  tabindex="2" role="button" class="header_toggle-menu">
                  <span class="header_toggle-menu_line header_toggle-menu_line--top"></span>
                  <span class="header_toggle-menu_line header_toggle-menu_line--middle"></span>
                  <span class="header_toggle-menu_line header_toggle-menu_line--bottom"></span>
              </label>
-
-
-     
-             <!--Brand / logo name -->
-     
-             <a class="brand-link" href="index.html"><p class="header_brand"><span class="B"> B</span>and<span class="H">H</span>op</p></a>
      
           
             <!--Header Navigation // list of page links-->
      
-            <nav class="header_nav">
-                <ul class="header_nav_list">
-                    <li class="header_nav_list_item "><a href="index.html"class="header_nav_list_item_link">Home</a> </li>
-                    <li class="header_nav_list_item"><a href="#" class="header_nav_list_item_link">Contact</a></li>
-                    <li class="header_nav_list_item"><a href="#" class="header_nav_list_item_link">Events</a></li>
-                    <li class="header_nav_list_item"><a href="#" class="header_nav_list_item_link">Studios</a></li>
-                    <li class="header_nav_list_item"><a href="auditions.html" class="header_nav_list_item_link">Auditions</a></li>
-                    <li class="header_nav_list_item header_nav_list_item--active"><a href="about-us.html" class="header_nav_list_item_link">About us</a></li>
+            <nav class="header_nav" role="navigation">
+                <ul class="header_nav_list" role="menu">
+                    <li class="header_nav_list_item" role="menuitem"><a href="index.html"class="header_nav_list_item_link"  role="link">Home</a> </li>
+                    <li class="header_nav_list_item" role="menuitem"><a href="#" class="header_nav_list_item_link"  role="link">Contact</a></li>
+                    <li class="header_nav_list_item" role="menuitem"><a href="#" class="header_nav_list_item_link"  role="link">Events</a></li>
+                    <li class="header_nav_list_item" role="menuitem"><a href="#" class="header_nav_list_item_link"  role="link">Studios</a></li>
+                    <li class="header_nav_list_item" role="menuitem"><a href="auditions.html" class="header_nav_list_item_link"  role="link">Auditions</a></li>
+                    <li class="header_nav_list_item header_nav_list_item--active" role="menuitem"><a href="about-us.html" class="header_nav_list_item_link"  role="link">About us</a></li>
                 </ul>
             </nav>
             
@@ -73,10 +73,10 @@
             <section class="about-articles-section" style="color: azure;">
 
                 <!--First Article //History of BandHop-->
-                    <article class="about-article" id="history">
-                        <h1 class="about-article_title">Our History</h1>
+                    <article class="about-article" id="history" role="article">
+                        <h1 class="about-article_title"  role="heading">Our History</h1>
 
-                            <p class="about-article-desc">
+                            <p class="about-article-desc" role="text">
                                <strong> Bandhop </strong>is a music association founded in London in 2015 
                                by a group of passionate music lovers who wanted
                                 to create a platform that would connect emerging bands with national 
@@ -91,11 +91,11 @@
                     </article>
 
             <!--Second Article //BandHop Team-->
-                    <article class="about-article" id="team">
-                        <h1 class="about-article_title">Bandhop Team</h1>
+                    <article class="about-article" id="team" role="article">
+                        <h1 class="about-article_title"  role="heading">Bandhop Team</h1>
 
                         
-                            <p class="about-article-desc a">
+                            <p class="about-article-desc a" role="text">
                                 At <strong> Bandhop </strong> we believe that our success is based on the collective
                                 efforts of our talented and dedicated team member.
                                 Each individual brings unique skills and perspectives to the table, 
@@ -112,10 +112,10 @@
 
 
             <!--Third Article //Mission-->
-                    <article class="about-article" id="mission">
-                        <h1 class="about-article_title">Our Mission</h1>
+                    <article class="about-article" id="mission" role="article">
+                        <h1 class="about-article_title" role="heading"></h1>>Our Mission</h1>
 
-                            <p class="about-article-desc">
+                            <p class="about-article-desc" role="text">
                                 At <strong> Bandhop </strong>, our mission is to empower emerging artists
                                  and revolutionize the way live music event are organized.
                                  Our platform provides a unique opportunity for musicians to connect with venues and create
@@ -128,8 +128,9 @@
 
 
 
-                <!-- Button Cta hidden while screen > 768px -->
-        <a href="#" class="btn_cta_link"><button class="btn_cta btn_cta--bottom">JOIN NOW</button></a>
+    <!-- Button Cta hidden while screen > 768px -->
+    <a href="#" role="link" title="join now to be a part of the Bandhop community"  class="btn_cta_link"><button class="btn_cta btn_cta--bottom">JOIN NOW</button></a>
+
 
         </main>
     <!--End Main-->
@@ -139,20 +140,20 @@
     <footer class="footer">
         
         <!--Social Network Links-->
-            <ul class="social-media_list">
-                <li class="social-media_list_item"><a href="#" class="social-media_list_item_link"><img src="/src/assets/icons/facebook (2).png" alt="" title="Facebook page of BandHop - Follow us"></a></li>
-                <li class="social-media_list_item"><a href="#" class="social-media_list_item_link"><img src="/src/assets/icons/youtube (1).png" alt=""></a></li>
-                <li class="social-media_list_item"><a href="#" class="social-media_list_item_link"><img src="/src/assets/icons/twitter.png" alt=""></a></li>
-                <li class="social-media_list_item"><a href="#" class="social-media_list_item_link"><img src="/src/assets/icons/instagram (1).png" alt=""></a></li>
-            </ul>
-    
-        <!--Member Aerea-->
-            <div class="member-area">
-                <a href="#" class="member-area_link">
-                    <p class="member-area_text">Member Area</p>
-                    <span class="member-area_icon"></span>
-                </a>
-            </div>
+    <ul class="social-media_list">
+        <li class="social-media_list_item"><a href="https://m.facebook.com/login/?locale=fr_FR&refsrc=deprecated"  aria-label="facebook button" role="button" class="social-media_list_item_link"><img src="/src/assets/icons/facebook (2).png" alt="Facebook page of Bandhop" title="Facebook page of BandHop - Follow us"></a></li>
+        <li class="social-media_list_item"><a href="https://www.youtube.com/"  role="button"  aria-label="youtube button" class="social-media_list_item_link"><img src="/src/assets/icons/youtube (1).png" alt="Youtube channel of Bandhop"  title="Youtube channel of BandHop - Follow us"></a></li>
+        <li class="social-media_list_item"><a href="https://twitter.com/login?lang=en"   role="button" aria-label="twitter button"  class="social-media_list_item_link"><img src="/src/assets/icons/twitter.png" alt="Twitter page of Bandhop" title="Twitter page of BandHop - Follow us" ></a></li>
+        <li class="social-media_list_item"><a href="https://www.instagram.com/"   role="button" aria-label="instagram button" class="social-media_list_item_link"><img src="/src/assets/icons/instagram (1).png" alt="Instagram page of Bandhop" title="Instagram page of BandHop - Follow us"></a></li>
+    </ul>
+
+<!--Member Aerea-->
+    <div class="member-area">
+        <a href="#" id="member-area-button" class="member-area_link" role="button" title="Log-in to access in your personal area">
+            <p class="member-area_text">Member Area</p>
+            <span class="member-area_icon"></span>
+        </a>
+    </div>
     
         </footer>
     <!--End Footer-->

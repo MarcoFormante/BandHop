@@ -7,46 +7,53 @@
     <meta name="description" content="Join our auditions and showcase your talent! 
     Find out about upcoming audition dates and locations for various music genre, 
     including rock, pop, jazz and more. Sign up now and get ready to rock the stage!">
+    <meta name="robots" content="index, follow">
+    <link rel="preload" href="src/sass/css/main.css" as="style">
     <link rel="stylesheet" href="src/sass/css/main.css">
-    <title>BandHop - Auditions</title>
+    <title>BandHop - Auditions: dates and locations</title>
 </head>
+
 <body class="body-pages">
 
     <header class="header">
 
-        <!-- Toggle Menu with checkBox to create animation without javascript // span tags for menu hamburger lines-->
-     
-             <input type="checkbox" hidden name="header_toggle-menu" id="header_toggle-menu">
-             <label for="header_toggle-menu" class="header_toggle-menu">
-                 <span class="header_toggle-menu_line header_toggle-menu_line--top"></span>
-                 <span class="header_toggle-menu_line header_toggle-menu_line--middle"></span>
-                 <span class="header_toggle-menu_line header_toggle-menu_line--bottom"></span>
-             </label>
+       
 
 
      
              <!--Brand / logo name -->
      
-             <a class="brand-link" href="index.html"><p class="header_brand"><span class="B"> B</span>and<span class="H">H</span>op</p></a>
+             <a class="brand-link"  tabindex="1" href="index.html"><p class="header_brand"><span class="B"> B</span>and<span class="H">H</span>op</p></a>
+
+    <!-- Toggle Menu with checkBox to create animation without javascript // span tags for menu hamburger lines-->
+     
+             <input type="checkbox" hidden name="header_toggle-menu" id="header_toggle-menu">
+             <label for="header_toggle-menu"  tabindex="2" role="button" class="header_toggle-menu">
+                 <span class="header_toggle-menu_line header_toggle-menu_line--top"></span>
+                 <span class="header_toggle-menu_line header_toggle-menu_line--middle"></span>
+                 <span class="header_toggle-menu_line header_toggle-menu_line--bottom"></span>
+             </label>
      
           
             <!--Header Navigation // list of page links-->
      
-            <nav class="header_nav">
-                <ul class="header_nav_list">
-                    <li class="header_nav_list_item "><a href="index.html"class="header_nav_list_item_link">Home</a> </li>
-                    <li class="header_nav_list_item"><a href="#" class="header_nav_list_item_link">Contact</a></li>
-                    <li class="header_nav_list_item"><a href="#" class="header_nav_list_item_link">Events</a></li>
-                    <li class="header_nav_list_item"><a href="#" class="header_nav_list_item_link">Studios</a></li>
-                    <li class="header_nav_list_item header_nav_list_item--active"><a href="auditions.html" class="header_nav_list_item_link">Auditions</a></li>
-                    <li class="header_nav_list_item"><a href="about-us.html" class="header_nav_list_item_link">About us</a></li>
+            <nav class="header_nav" role="navigation">
+                <ul class="header_nav_list" role="menu">
+                    <li role="menuitem" class="header_nav_list_item "><a href="index.html" role="link" class="header_nav_list_item_link">Home</a> </li>
+                    <li role="menuitem" class="header_nav_list_item"><a href="#" role="link" class="header_nav_list_item_link">Contact</a></li>
+                    <li role="menuitem" class="header_nav_list_item"><a href="#" role="link" class="header_nav_list_item_link">Events</a></li>
+                    <li role="menuitem" class="header_nav_list_item"><a href="#" role="link" class="header_nav_list_item_link">Studios</a></li>
+                    <li role="menuitem" class="header_nav_list_item header_nav_list_item--active"><a href="auditions.html" role="link" class="header_nav_list_item_link">Auditions</a></li>
+                    <li role="menuitem" class="header_nav_list_item"><a href="about-us.html" role="link" class="header_nav_list_item_link">About us</a></li>
                 </ul>
             </nav>
+
             
-         <!--Login Area (mobile & tablet only)-->
-            <div class="login-area"><span class="member-area_icon"></span></div>
-     
-            <a href="#" class="btn_cta_link"><button class="btn_cta">JOIN NOW</button></a>
+    <!--Login Area (mobile & tablet only)-->
+    <div class="login-area"><a href="#"  role="button" aria-label="member-area-button"><span class="member-area_icon"></span></a></div>
+
+    <!--Button CTA 'Join Now' -->
+        <a href="#" title="join now to be a part of the Bandhop community" class="btn_cta_link" role="link"><button class="btn_cta">JOIN NOW</button></a>
 
          </header>
 
@@ -62,9 +69,11 @@
 
         <!--Search bar-->
             <section class="search-bar_section">
-                <label for="search-bar_inpt">Search</label>
-                <input type="search" name="search-bar" id="search-bar_inpt" class="search-bar_inpt" placeholder="Ex. Jazz Audition">
-                <span class="search-bar_icon"></span>
+                <form action="#" role="search">
+                    <label for="search-bar" aria-labelledby="search-bar">Search</label>
+                    <input  type="search" name="search-bar" id="search-bar" class="search-bar" placeholder="Ex. Jazz Audition" aria-label="search">
+                    <span class="search-bar_icon" role="button"></span>
+                </form>
             </section>
 
 
@@ -307,23 +316,21 @@
 <!--Footer-->
 <footer class="footer">
         
-    <!--Social Media Links-->
-        <ul class="social-media_list">
-            <li class="social-media_list_item"><a href="#" class="social-media_list_item_link"><img src="/src/assets/icons/facebook (2).png" alt="" title="Facebook page of BandHop - Follow us"></a></li>
-            <li class="social-media_list_item"><a href="#" class="social-media_list_item_link"><img src="/src/assets/icons/youtube (1).png" alt=""></a></li>
-            <li class="social-media_list_item"><a href="#" class="social-media_list_item_link"><img src="/src/assets/icons/twitter.png" alt=""></a></li>
-            <li class="social-media_list_item"><a href="#" class="social-media_list_item_link"><img src="/src/assets/icons/instagram (1).png" alt=""></a></li>
-        </ul>
-        
+    <!--Social Network Links-->
+    <ul class="social-media_list">
+        <li class="social-media_list_item"><a href="https://m.facebook.com/login/?locale=fr_FR&refsrc=deprecated"  aria-label="facebook button" role="button" class="social-media_list_item_link"><img src="/src/assets/icons/facebook (2).png" alt="Facebook page of Bandhop" title="Facebook page of BandHop - Follow us"></a></li>
+        <li class="social-media_list_item"><a href="https://www.youtube.com/"  role="button"  aria-label="youtube button" class="social-media_list_item_link"><img src="/src/assets/icons/youtube (1).png" alt="Youtube channel of Bandhop"  title="Youtube channel of BandHop - Follow us"></a></li>
+        <li class="social-media_list_item"><a href="https://twitter.com/login?lang=en"   role="button" aria-label="twitter button"  class="social-media_list_item_link"><img src="/src/assets/icons/twitter.png" alt="Twitter page of Bandhop" title="Twitter page of BandHop - Follow us" ></a></li>
+        <li class="social-media_list_item"><a href="https://www.instagram.com/"   role="button" aria-label="instagram button" class="social-media_list_item_link"><img src="/src/assets/icons/instagram (1).png" alt="Instagram page of Bandhop" title="Instagram page of BandHop - Follow us"></a></li>
+    </ul>
 
-    <!--Member Aerea-->
-    
-        <div class="member-area">
-            <a href="#" class="member-area_link">
-                <p class="member-area_text">Member Area</p>
-                <span class="member-area_icon"></span>
-            </a>
-        </div>
+<!--Member Aerea-->
+    <div class="member-area">
+        <a href="#" id="member-area-button" class="member-area_link" role="button" title="Log-in to access in your personal area">
+            <p class="member-area_text">Member Area</p>
+            <span class="member-area_icon"></span>
+        </a>
+    </div>
 
     </footer>
 <!--End Footer-->
