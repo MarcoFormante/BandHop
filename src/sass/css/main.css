@@ -687,7 +687,7 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
     opacity: 1;
   }
 }
-a.link-about_main {
+a.link-about_main, .violet-link {
   color: blueviolet;
   font-size: 1.2em;
 }
@@ -699,6 +699,7 @@ a.link-about_main {
 
 .about-articles-section {
   margin-top: 30px;
+  color: rgb(231, 231, 231);
 }
 @media screen and (min-width: 769px) {
   .about-articles-section {
