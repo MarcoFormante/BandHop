@@ -686,6 +686,11 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
     border-color: rgb(231, 231, 231);
   }
 }
+a.link-about_main {
+  color: blueviolet;
+  font-size: 1.2em;
+}
+
 .section-titles_text {
   margin-top: 20px;
   letter-spacing: 1.2px;

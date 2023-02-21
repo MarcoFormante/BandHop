@@ -7,23 +7,21 @@
     position: fixed;
     width: 100dvw;
     bottom: 0;
-   
+
+//Center content while screen width < 769px
     @media screen and (max-width:768px) {
         justify-content: center;
         padding: 0;
     }
 
-
+//screen width > 768px
     @media screen and (min-width:769px) {
-       
         width: 100dvw;
         margin: auto;
-        
-        
     }
 
     
-
+//screen width > 1024px, footer width become 80% of the page
     @media screen and (min-width:1024px) {
               
       width: 80dvw;
@@ -37,12 +35,15 @@
 }
 
 
+//Social media list (ul , li , img)
+
 .social-media_list{
     @include flex-center(row);
     gap: 5vw;
     height: inherit;
-    
 
+    
+        //Social media list  while screen >768px
             @media screen and (min-width:769px) {
                 justify-content: flex-start;
                 padding-top: 5px;
@@ -64,35 +65,40 @@
 }
 
 
+
+
+
+
+//Member Area
 .member-area{
 
     height: 100%;
 
         @media screen and (max-width:768px) {
             display: none;
-
         }
 
+
+    //Member Area link / container 
         &_link{
             @include flex-center(row);
             height: 100%;
-            text-decoration-color: $brand-color;
-            
-                
+            text-decoration-color: $brand-color;      
         }
 
 
+    //Member Area Text
         &_text{
-           
             font-size: 1.5em;
             letter-spacing: 2px;
             color: $white-color;
-            
-        
         }
 
 
+
+     //Member Area Icon
         &_icon{
+            
             text-align: center;
             background-color: aliceblue;
             border-radius: 50%;

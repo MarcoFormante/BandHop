@@ -1,10 +1,4 @@
 //Title of the Page
-
-
-
-
-
-
 .page-title_text{
     color: $white-color;
     font-size: 2.8em;
@@ -178,7 +172,7 @@
 
 }
 
-
+//Action Btn  for all auditions
 .audition_action-btn{
     position: absolute;
     top:40%;
@@ -193,7 +187,7 @@
 }
 
 
-
+//Button Animation 'LightToggle'
 @keyframes lightToggle {
     from{
         border-color: black;
@@ -204,6 +198,14 @@
     }
 }
 
+
+
+
+//Links in audition page have violet color 
+a.link-about_main{
+    color: blueviolet;
+    font-size: 1.2em;
+}
 
 
 

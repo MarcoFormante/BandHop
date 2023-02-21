@@ -33,7 +33,6 @@
 
                 //Double quote for H lettre  ::after
                     &::after{
-
                         content: "''";
                         position: absolute;
                         top: -2px;
@@ -44,6 +43,7 @@
 
             }
 
+    //'B' & 'H'  of BandHop / biggest then other characters
             span{
                 font-size: 120%;  
             }
