@@ -37,14 +37,14 @@
           
             <!--Header Navigation // list of page links-->
      
-            <nav class="header_nav" role="navigation">
+            <nav class="header_nav" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
                 <ul class="header_nav_list" role="menu">
-                    <li role="menuitem" class="header_nav_list_item "><a href="index.html" role="link" class="header_nav_list_item_link">Home</a> </li>
-                    <li role="menuitem" class="header_nav_list_item"><a href="#" role="link" class="header_nav_list_item_link">Contact</a></li>
-                    <li role="menuitem" class="header_nav_list_item"><a href="#" role="link" class="header_nav_list_item_link">Events</a></li>
-                    <li role="menuitem" class="header_nav_list_item"><a href="#" role="link" class="header_nav_list_item_link">Studios</a></li>
-                    <li role="menuitem" class="header_nav_list_item header_nav_list_item--active"><a href="auditions.html" role="link" class="header_nav_list_item_link">Auditions</a></li>
-                    <li role="menuitem" class="header_nav_list_item"><a href="about-us.html" role="link" class="header_nav_list_item_link">About us</a></li>
+                    <li role="menuitem" class="header_nav_list_item "><a itemprop="url" href="index.html" role="link" class="header_nav_list_item_link">Home</a> </li>
+                    <li role="menuitem" class="header_nav_list_item"><a  itemprop="url" href="#" role="link" class="header_nav_list_item_link">Contact</a></li>
+                    <li role="menuitem" class="header_nav_list_item"><a  itemprop="url" href="#" role="link" class="header_nav_list_item_link">Events</a></li>
+                    <li role="menuitem" class="header_nav_list_item"><a  itemprop="url" href="#" role="link" class="header_nav_list_item_link">Studios</a></li>
+                    <li role="menuitem" class="header_nav_list_item header_nav_list_item--active"><a   itemprop="url" href="auditions.html" role="link" class="header_nav_list_item_link">Auditions</a></li>
+                    <li role="menuitem" class="header_nav_list_item"><a href="about-us.html"  itemprop="url"  role="link" class="header_nav_list_item_link">About us</a></li>
                 </ul>
             </nav>
 
@@ -80,22 +80,22 @@
 <!--Rock Audition Articles-->
             <section class="section-contents">
                     
-                <article class="content">
-                    <h1 class="content-type_title">Rock Auditions</h1>
+                <article class="content" itemscope itemtype="https://schema.org/Event">
+                    <h1 class="content-type_title" itemprop="name">Rock Auditions</h1>
 
 
 
         <!--Audition article-->
                     <article class="audition">
-                        <p class="audition-location">London <span class="audition-location_flag"></span></p>
+                        <p class="audition-location" itemprop="location" >London</p>
 
                             <ul class="audition_info_list">
-                                <li class="audition_info_list_item"><p class="audition-date"><strong>Date:</strong><time datetime="2023-03-15"> March 15, 2023 </time></p></li>
+                                <li class="audition_info_list_item"><p class="audition-date" itemprop="startDate"><strong>Date:</strong><time datetime="2023-03-15"> March 15, 2023 </time></p></li>
                                 <li class="audition_info_list_item"><p class="audition-time"><strong>Time:</strong><time datetime="16:30"> 16:30 </time></p></li>
                                 <li class="audition_info_list_item" style="display: flex;"> 
-                                    <p class="audition-address"><strong> Location: </strong>
+                                    <p class="audition-address" itemscope itemtype="https://schema.org/PostalAddress"><strong> Location: </strong>
                                         <a href="https://goo.gl/maps/ekUSi4WsdHfRg9Vk8"> 
-                                            <address> Downing St, London, UK</address> 
+                                            <address itemprop="location"> Downing St, London, UK</address> 
                                         </a> 
                                         <a href="#"><button class="audition_action-btn action-btn">JOIN AUDITION</button></a>
                                     </p> 
@@ -108,15 +108,15 @@
 
         <!--Audition article-->
                     <article class="audition">
-                        <p class="audition-location">Manchester</p>
+                        <p class="audition-location" itemprop="location">Manchester</p>
 
                             <ul class="audition_info_list">
-                                <li class="audition_info_list_item"><p class="audition-date"><strong>Date:</strong><time datetime="2023-03-26"> March 26, 2023 </time></p></li>
+                                <li class="audition_info_list_item"><p class="audition-date"  itemprop="startDate"><strong>Date:</strong><time datetime="2023-03-26"> March 26, 2023 </time></p></li>
                                 <li class="audition_info_list_item"><p class="audition-time"><strong>Time:</strong><time datetime="11:30"> 11:30 </time></p></li>
                                 <li class="audition_info_list_item" style="display: flex;"> 
-                                    <p class="audition-address"><strong> Location: </strong>
+                                    <p class="audition-address" itemscope itemtype="https://schema.org/PostalAddress"><strong> Location: </strong>
                                         <a href="https://goo.gl/maps/Q49jn4EgGyRiP31J7"> 
-                                            <address>Birch Ave, Old Trafford, Stretford, Manchester M16 0PG, UK</address> 
+                                            <address itemprop="location">Birch Ave, Old Trafford, Stretford, Manchester M16 0PG, UK</address> 
                                         </a> 
                                         <a href="#"><button class="audition_action-btn action-btn">JOIN AUDITION</button></a>
                                     </p> 
@@ -130,15 +130,15 @@
 
         <!--Audition article-->
                     <article class="audition">
-                        <p class="audition-location">Liverpool</p>
+                        <p class="audition-location" itemprop="location">Liverpool</p>
 
                             <ul class="audition_info_list">
-                                <li class="audition_info_list_item"><p class="audition-date"><strong>Date:</strong><time datetime="2023-04-02"> April 02, 2023 </time></p></li>
+                                <li class="audition_info_list_item"><p class="audition-date"  itemprop="startDate"><strong>Date:</strong><time datetime="2023-04-02"> April 02, 2023 </time></p></li>
                                 <li class="audition_info_list_item"><p class="audition-time"><strong>Time:</strong><time datetime="10:50"> 10:50 </time></p></li>
                                 <li class="audition_info_list_item" style="display: flex;"> 
-                                    <p class="audition-address"><strong> Location: </strong>
+                                    <p class="audition-address" itemscope itemtype="https://schema.org/PostalAddress"><strong> Location: </strong>
                                         <a href="https://goo.gl/maps/Qbe1fndvnnSEDhQD8"> 
-                                            <address> Richmond Row, Liverpool L3 3BU, UK</address> 
+                                            <address itemprop="location"> Richmond Row, Liverpool L3 3BU, UK</address> 
                                         </a> 
                                         <a href="#"><button class="audition_action-btn action-btn">JOIN AUDITION</button></a>
                                     </p> 
@@ -156,21 +156,21 @@
 
         <!--Jazz Audition article-->
                 <br/>
-                <article class="content">
-                    <h1 class="content-type_title">Jazz Auditions</h1>
+                <article class="content" itemscope itemtype="https://schema.org/Event">
+                    <h1 class="content-type_title" itemprop="name">Jazz Auditions</h1>
 
 
         <!--Audition article-->
                     <article class="audition">
-                        <p class="audition-location">Leeds <span class="audition-location_flag"></span></p>
+                        <p class="audition-location" itemprop="location">Leeds <span class="audition-location_flag"></span></p>
 
                             <ul class="audition_info_list">
-                                <li class="audition_info_list_item"><p class="audition-date"><strong>Date:</strong><time datetime="2023-20-03"> March 20, 2023 </time></p></li>
+                                <li class="audition_info_list_item"><p class="audition-date"  itemprop="startDate"><strong>Date:</strong><time datetime="2023-20-03"> March 20, 2023 </time></p></li>
                                 <li class="audition_info_list_item"><p class="audition-time"><strong>Time:</strong><time datetime="10:00"> 10:00 </time></p></li>
                                 <li class="audition_info_list_item" style="display: flex;"> 
-                                    <p class="audition-address"><strong> Location: </strong>
+                                    <p class="audition-address" itemscope itemtype="https://schema.org/PostalAddress"><strong> Location: </strong>
                                         <a href="https://goo.gl/maps/fgrqZ3G3pPSPVezG7"> 
-                                            <address> Roster far, Leead, UK</address> 
+                                            <address itemprop="location"> Roster far, Leead, UK</address> 
                                         </a> 
                                         <a href="#"><button class="audition_action-btn action-btn">JOIN AUDITION</button></a>
                                     </p> 
@@ -183,15 +183,15 @@
 
         <!--Audition article-->
                     <article class="audition">
-                        <p class="audition-location">London</p>
+                        <p class="audition-location" itemprop="location">London</p>
 
                             <ul class="audition_info_list">
-                                <li class="audition_info_list_item"><p class="audition-date"><strong>Date:</strong><time datetime="2023-26-03"> March 26, 2023 </time></p></li>
+                                <li class="audition_info_list_item"><p class="audition-date"  itemprop="startDate"><strong>Date:</strong><time datetime="2023-26-03"> March 26, 2023 </time></p></li>
                                 <li class="audition_info_list_item"><p class="audition-time"><strong>Time:</strong><time datetime="11:30"> 11:30 </time></p></li>
                                 <li class="audition_info_list_item" style="display: flex;"> 
-                                    <p class="audition-address"><strong> Location: </strong>
+                                    <p class="audition-address" itemscope itemtype="https://schema.org/PostalAddress"><strong> Location: </strong>
                                         <a href="https://goo.gl/maps/fgrqZ3G3pPSPVezG7"> 
-                                            <address>Blue lagon 2, London, UK</address> 
+                                            <address itemprop="location">Blue lagon 2, London, UK</address> 
                                         </a> 
                                         <a href="#"><button class="audition_action-btn action-btn">JOIN AUDITION</button></a>
                                     </p> 
@@ -204,15 +204,15 @@
 
         <!--Audition article-->
                     <article class="audition">
-                        <p class="audition-location">Edinburgh</p>
+                        <p class="audition-location" itemprop="location">Edinburgh</p>
 
                             <ul class="audition_info_list">
-                                <li class="audition_info_list_item"><p class="audition-date"><strong>Date:</strong><time datetime="2023-20-04"> April 20, 2023 </time></p></li>
+                                <li class="audition_info_list_item"><p class="audition-date"  itemprop="startDate"><strong>Date:</strong><time datetime="2023-20-04"> April 20, 2023 </time></p></li>
                                 <li class="audition_info_list_item"><p class="audition-time"><strong>Time:</strong><time datetime="12:30"> 12:30 </time></p></li>
                                 <li class="audition_info_list_item" style="display: flex;"> 
-                                    <p class="audition-address"><strong> Location: </strong>
+                                    <p class="audition-address" itemscope itemtype="https://schema.org/PostalAddress"><strong> Location: </strong>
                                         <a href="https://goo.gl/maps/fgrqZ3G3pPSPVezG7"> 
-                                            <address> Nadan Theatre, Edinburgh, Uk </address> 
+                                            <address itemprop="location"> Nadan Theatre, Edinburgh, Uk </address> 
                                         </a> 
                                         <a href="#"><button class="audition_action-btn action-btn">JOIN AUDITION</button></a>
                                     </p> 
@@ -231,21 +231,21 @@
 
             <!--POP Audition -->
                  <br/>
-                 <article class="content">
-                     <h1 class="content-type_title">Pop Auditions</h1>
+                 <article class="content" itemscope itemtype="https://schema.org/Event">
+                     <h1 class="content-type_title" itemprop="name">Pop Auditions</h1>
 
  
             <!--Audition article-->
                      <article class="audition">
-                         <p class="audition-location">Bristol <span class="audition-location_flag"></span></p>
+                         <p class="audition-location" itemprop="location">Bristol <span class="audition-location_flag"></span></p>
  
                              <ul class="audition_info_list">
-                                 <li class="audition_info_list_item"><p class="audition-date"><strong>Date:</strong><time datetime="2023-03-10"> March 10, 2023 </time></p></li>
+                                 <li class="audition_info_list_item"><p class="audition-date"  itemprop="startDate"><strong>Date:</strong><time datetime="2023-03-10"> March 10, 2023 </time></p></li>
                                  <li class="audition_info_list_item"><p class="audition-time"><strong>Time:</strong><time datetime="10:00"> 10:00 </time></p></li>
                                  <li class="audition_info_list_item" style="display: flex;"> 
-                                     <p class="audition-address"><strong> Location: </strong>
+                                     <p class="audition-address" itemscope itemtype="https://schema.org/PostalAddress"><strong> Location: </strong>
                                          <a href="https://goo.gl/maps/fgrqZ3G3pPSPVezG7"> 
-                                             <address> Main street, Bristol, Uk</address> 
+                                             <address itemprop="location"> Main street, Bristol, Uk</address> 
                                          </a> 
                                          <a href="#"><button class="audition_action-btn action-btn">JOIN AUDITION</button></a>
                                      </p> 
@@ -259,15 +259,15 @@
  
             <!--Audition article-->
                      <article class="audition">
-                         <p class="audition-location">London</p>
+                         <p class="audition-location" itemprop="location">London</p>
  
                              <ul class="audition_info_list">
-                                 <li class="audition_info_list_item"><p class="audition-date"><strong>Date:</strong><time datetime="2023-05-05"> May 05, 2023 </time></p></li>
+                                 <li class="audition_info_list_item"><p class="audition-date"  itemprop="startDate"><strong>Date:</strong><time datetime="2023-05-05"> May 05, 2023 </time></p></li>
                                  <li class="audition_info_list_item"><p class="audition-time"><strong>Time:</strong><time datetime="15:30"> 15:30 </time></p></li>
                                  <li class="audition_info_list_item" style="display: flex;"> 
-                                     <p class="audition-address"><strong> Location: </strong>
+                                     <p class="audition-address" itemscope itemtype="https://schema.org/PostalAddress"><strong> Location: </strong>
                                          <a href="https://goo.gl/maps/fgrqZ3G3pPSPVezG7"> 
-                                             <address>Woo Goner, London, UK</address> 
+                                             <address  itemprop="location"> Woo Goner, London, UK</address> 
                                          </a> 
                                          <a href="#"><button class="audition_action-btn action-btn">JOIN AUDITION</button></a>
                                      </p> 
@@ -280,15 +280,15 @@
  
             <!--Audition article-->
                      <article class="audition">
-                         <p class="audition-location">Sheffield</p>
+                         <p class="audition-location" itemprop="location">Sheffield</p>
  
                              <ul class="audition_info_list">
-                                 <li class="audition_info_list_item"><p class="audition-date"><strong>Date:</strong><time datetime="2023-04-27"> April 27, 2023 </time></p></li>
+                                 <li class="audition_info_list_item"><p class="audition-date"  itemprop="startDate"><strong>Date:</strong><time datetime="2023-04-27"> April 27, 2023 </time></p></li>
                                  <li class="audition_info_list_item"><p class="audition-time"><strong>Time:</strong><time datetime="12:30"> 12:30 </time></p></li>
                                  <li class="audition_info_list_item" style="display: flex;"> 
-                                     <p class="audition-address"><strong> Location: </strong>
-                                         <a href="https://goo.gl/maps/fgrqZ3G3pPSPVezG7"> 
-                                             <address> 25 old-street, Sheffield ,Uk </address> 
+                                     <p class="audition-address" itemscope itemtype="https://schema.org/PostalAddress"><strong> Location: </strong>
+                                         <a href="https://goo.gl/maps/fgrqZ3G3pPSPVezG7" > 
+                                             <address itemprop="location"> 25 old-street, Sheffield ,Uk </address> 
                                          </a> 
                                          <a href="#"><button class="audition_action-btn action-btn">JOIN AUDITION</button></a>
                                      </p> 
@@ -317,11 +317,11 @@
 <footer class="footer">
         
     <!--Social Network Links-->
-    <ul class="social-media_list">
-        <li class="social-media_list_item"><a href="https://m.facebook.com/login/?locale=fr_FR&refsrc=deprecated"  aria-label="facebook button" role="button" class="social-media_list_item_link"><img src="/src/assets/icons/facebook (2).png" alt="Facebook page of Bandhop" title="Facebook page of BandHop - Follow us"></a></li>
-        <li class="social-media_list_item"><a href="https://www.youtube.com/"  role="button"  aria-label="youtube button" class="social-media_list_item_link"><img src="/src/assets/icons/youtube (1).png" alt="Youtube channel of Bandhop"  title="Youtube channel of BandHop - Follow us"></a></li>
-        <li class="social-media_list_item"><a href="https://twitter.com/login?lang=en"   role="button" aria-label="twitter button"  class="social-media_list_item_link"><img src="/src/assets/icons/twitter.png" alt="Twitter page of Bandhop" title="Twitter page of BandHop - Follow us" ></a></li>
-        <li class="social-media_list_item"><a href="https://www.instagram.com/"   role="button" aria-label="instagram button" class="social-media_list_item_link"><img src="/src/assets/icons/instagram (1).png" alt="Instagram page of Bandhop" title="Instagram page of BandHop - Follow us"></a></li>
+    <ul class="social-media_list" itemscope itemtype="https://schema.org/WebPage">
+        <li class="social-media_list_item"><a itemprop="url" href="https://m.facebook.com/login/?locale=fr_FR&refsrc=deprecated"  aria-label="facebook button" role="button" class="social-media_list_item_link"><img src="/src/assets/icons/facebook (2).png" alt="Facebook page of Bandhop" title="Facebook page of BandHop - Follow us"></a></li>
+        <li class="social-media_list_item"><a itemprop="url" href="https://www.youtube.com/"  role="button"  aria-label="youtube button" class="social-media_list_item_link"><img src="/src/assets/icons/youtube (1).png" alt="Youtube channel of Bandhop"  title="Youtube channel of BandHop - Follow us"></a></li>
+        <li class="social-media_list_item"><a itemprop="url" href="https://twitter.com/login?lang=en"   role="button" aria-label="twitter button"  class="social-media_list_item_link"><img src="/src/assets/icons/twitter.png" alt="Twitter page of Bandhop" title="Twitter page of BandHop - Follow us" ></a></li>
+        <li class="social-media_list_item"><a itemprop="url" href="https://www.instagram.com/"   role="button" aria-label="instagram button" class="social-media_list_item_link"><img src="/src/assets/icons/instagram (1).png" alt="Instagram page of Bandhop" title="Instagram page of BandHop - Follow us"></a></li>
     </ul>
 
 <!--Member Aerea-->

@@ -34,14 +34,14 @@
           
             <!--Header Navigation // list of page links-->
      
-            <nav class="header_nav" role="navigation">
+            <nav class="header_nav" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
                 <ul class="header_nav_list" role="menu">
-                    <li class="header_nav_list_item" role="menuitem"><a href="index.html"class="header_nav_list_item_link"  role="link">Home</a> </li>
-                    <li class="header_nav_list_item" role="menuitem"><a href="#" class="header_nav_list_item_link"  role="link">Contact</a></li>
-                    <li class="header_nav_list_item" role="menuitem"><a href="#" class="header_nav_list_item_link"  role="link">Events</a></li>
-                    <li class="header_nav_list_item" role="menuitem"><a href="#" class="header_nav_list_item_link"  role="link">Studios</a></li>
-                    <li class="header_nav_list_item" role="menuitem"><a href="auditions.html" class="header_nav_list_item_link"  role="link">Auditions</a></li>
-                    <li class="header_nav_list_item header_nav_list_item--active" role="menuitem"><a href="about-us.html" class="header_nav_list_item_link"  role="link">About us</a></li>
+                    <li class="header_nav_list_item" role="menuitem"><a itemprop="url" href="index.html"class="header_nav_list_item_link"  role="link">Home</a> </li>
+                    <li class="header_nav_list_item" role="menuitem"><a itemprop="url" href="#" class="header_nav_list_item_link"  role="link">Contact</a></li>
+                    <li class="header_nav_list_item" role="menuitem"><a itemprop="url" href="#" class="header_nav_list_item_link"  role="link">Events</a></li>
+                    <li class="header_nav_list_item" role="menuitem"><a itemprop="url" href="#" class="header_nav_list_item_link"  role="link">Studios</a></li>
+                    <li class="header_nav_list_item" role="menuitem"><a itemprop="url" href="auditions.html" class="header_nav_list_item_link"  role="link">Auditions</a></li>
+                    <li class="header_nav_list_item header_nav_list_item--active" role="menuitem"><a itemprop="url" href="about-us.html" class="header_nav_list_item_link"  role="link">About us</a></li>
                 </ul>
             </nav>
             
@@ -73,8 +73,8 @@
             <section class="about-articles-section">
 
                 <!--First Article //History of BandHop-->
-                    <article class="about-article" id="history" role="article">
-                        <h1 class="about-article_title"  role="heading">Our History</h1>
+                    <article class="about-article" id="history" role="article"  itemscope itemtype="https://schema.org/Article" >
+                        <h1 class="about-article_title"  role="heading">Ou itemprop="name"r History</h1>
 
                             <p class="about-article-desc" role="text">
                                <strong> Bandhop </strong>is a music association founded in London in 2015 
@@ -91,11 +91,11 @@
                     </article>
 
             <!--Second Article //BandHop Team-->
-                    <article class="about-article" id="team" role="article">
-                        <h1 class="about-article_title"  role="heading">Bandhop Team</h1>
+                    <article class="about-article" id="team" role="article" itemscope itemtype="https://schema.org/Article">
+                        <h1 class="about-article_title"  role="heading" itemprop="name">Bandhop Team</h1>
 
                         
-                            <p class="about-article-desc a" role="text">
+                            <p class="about-article-desc a" role="text" itemprop="articleBody">
                                 At <strong> Bandhop </strong> we believe that our success is based on the collective
                                 efforts of our talented and dedicated team member.
                                 Each individual brings unique skills and perspectives to the table, 
@@ -112,16 +112,16 @@
 
 
             <!--Third Article //Mission-->
-                    <article class="about-article" id="mission" role="article">
-                        <h1 class="about-article_title" role="heading">Our Mission</h1>
+                    <article class="about-article" id="mission" role="article" itemscope itemtype="https://schema.org/Article">
+                        <h1 class="about-article_title" role="heading" itemprop="name">Our itemprop="name" Mission</h1>
 
-                            <p class="about-article-desc" role="text">
+                            <p class="about-article-desc" role="text"  itemprop="articleBody">
                                 At <strong> Bandhop </strong>, our mission is to empower emerging artists
                                  and revolutionize the way live music event are organized.
                                  Our platform provides a unique opportunity for musicians to connect with venues and create
                                  unforgettable experiences for their audiences. 
                                  <br/>
-                                 <a href="#" class="violet-link">Join us</a> in our mission to make live music accessible to all!
+                                 <a href="#" itemprop="url" class="violet-link">Join us</a> in our mission to make live music accessible to all!
                             </p>
                     </article>
             </section>
@@ -140,11 +140,11 @@
     <footer class="footer">
         
         <!--Social Network Links-->
-    <ul class="social-media_list">
-        <li class="social-media_list_item"><a href="https://m.facebook.com/login/?locale=fr_FR&refsrc=deprecated"  aria-label="facebook button" role="button" class="social-media_list_item_link"><img src="/src/assets/icons/facebook (2).png" alt="Facebook page of Bandhop" title="Facebook page of BandHop - Follow us"></a></li>
-        <li class="social-media_list_item"><a href="https://www.youtube.com/"  role="button"  aria-label="youtube button" class="social-media_list_item_link"><img src="/src/assets/icons/youtube (1).png" alt="Youtube channel of Bandhop"  title="Youtube channel of BandHop - Follow us"></a></li>
-        <li class="social-media_list_item"><a href="https://twitter.com/login?lang=en"   role="button" aria-label="twitter button"  class="social-media_list_item_link"><img src="/src/assets/icons/twitter.png" alt="Twitter page of Bandhop" title="Twitter page of BandHop - Follow us" ></a></li>
-        <li class="social-media_list_item"><a href="https://www.instagram.com/"   role="button" aria-label="instagram button" class="social-media_list_item_link"><img src="/src/assets/icons/instagram (1).png" alt="Instagram page of Bandhop" title="Instagram page of BandHop - Follow us"></a></li>
+    <ul class="social-media_list" itemscope itemtype="https://schema.org/WebPage">
+        <li class="social-media_list_item" itemprop="sharedContent"><a itemprop="url" href="https://m.facebook.com/login/?locale=fr_FR&refsrc=deprecated"  aria-label="facebook button" role="button" class="social-media_list_item_link"><img src="/src/assets/icons/facebook (2).png" alt="Facebook page of Bandhop" title="Facebook page of BandHop - Follow us"></a></li>
+        <li class="social-media_list_item" itemprop="sharedContent"><a itemprop="url" href="https://www.youtube.com/"  role="button"  aria-label="youtube button" class="social-media_list_item_link"><img src="/src/assets/icons/youtube (1).png" alt="Youtube channel of Bandhop"  title="Youtube channel of BandHop - Follow us"></a></li>
+        <li class="social-media_list_item" itemprop="sharedContent"><a itemprop="url" href="https://twitter.com/login?lang=en"   role="button" aria-label="twitter button"  class="social-media_list_item_link"><img src="/src/assets/icons/twitter.png" alt="Twitter page of Bandhop" title="Twitter page of BandHop - Follow us" ></a></li>
+        <li class="social-media_list_item" itemprop="sharedContent"><a itemprop="url" href="https://www.instagram.com/"   role="button" aria-label="instagram button" class="social-media_list_item_link"><img src="/src/assets/icons/instagram (1).png" alt="Instagram page of Bandhop" title="Instagram page of BandHop - Follow us"></a></li>
     </ul>
 
 <!--Member Aerea-->

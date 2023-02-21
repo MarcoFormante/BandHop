@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  itemtype="https://schema.org/WebSite>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,12 +17,12 @@
 <body class="home-page">
 
       <!-- Header-->
-    <header class="header">
+    <header class="header" itemscope itemtype="https://schema.org/Organization">
 
     
              <!--Brand / logo name -->
      
-             <a class="brand-link"   href="index.html"><p class="header_brand"><span class="B"> B</span>and<span class="H">H</span>op</p></a>
+             <a class="brand-link"  href="index.html"><p class="header_brand" itemprop="name"><span class="B"> B</span>and<span class="H">H</span>op</p></a>
 
     <!-- Toggle Menu with checkBox to create animation without javascript // span tags for menu hamburger lines-->
      
@@ -37,14 +37,14 @@
      
        <!--Header Navigation // list of page links-->
 
-        <nav class="header_nav" role="navigation" >
+        <nav class="header_nav" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
             <ul class="header_nav_list" id="menu" role="menu">
-                <li class="header_nav_list_item header_nav_list_item--active" role="menuitem"><a role="link" href="index.html"class="header_nav_list_item_link">Home</a> </li>
-                <li class="header_nav_list_item" role="menuitem"><a href="#" role="link" class="header_nav_list_item_link">Contact</a></li>
-                <li class="header_nav_list_item" role="menuitem"><a href="#" role="link" class="header_nav_list_item_link">Events</a></li>
-                <li class="header_nav_list_item" role="menuitem"><a href="#"  role="link" class="header_nav_list_item_link">Studios</a></li>
-                <li class="header_nav_list_item" role="menuitem"><a href="auditions.html" role="link" class="header_nav_list_item_link">Auditions</a></li>
-                <li class="header_nav_list_item" role="menuitem"><a href="about-us.html"  role="link" class="header_nav_list_item_link">About us</a></li>
+                <li class="header_nav_list_item header_nav_list_item--active" role="menuitem"><a itemprop="url" role="link" href="index.html"class="header_nav_list_item_link">Home</a></li>
+                <li class="header_nav_list_item" role="menuitem"><a href="#" role="link" itemprop="url"  class="header_nav_list_item_link">Contact</a></li>
+                <li class="header_nav_list_item" role="menuitem"><a href="#" role="link" itemprop="url"  class="header_nav_list_item_link">Events</a></li>
+                <li class="header_nav_list_item" role="menuitem"><a href="#"  role="link" itemprop="url"  class="header_nav_list_item_link">Studios</a></li>
+                <li class="header_nav_list_item" role="menuitem"><a href="auditions.html" itemprop="url"  role="link" class="header_nav_list_item_link">Auditions</a></li>
+                <li class="header_nav_list_item" role="menuitem"><a href="about-us.html" itemprop="url"  role="link" class="header_nav_list_item_link">About us</a></li>
             </ul>
         </nav>
 
@@ -63,8 +63,8 @@
     <main class="main_home-page">
 
 <!--Slogan -->
-    <section class="slogan-section">
-        <h1 class="brand-slogan">BandHop - The best place to find your stage!</h2>
+    <section class="slogan-section" itemscope itemtype="https://schema.org/Brand">
+        <h1 class="brand-slogan" itemprop="Slogan"> BandHop - The best place to find your stage!</h2>
         <p class="brand-slogan_sub">Are you a band or venues?</p>
         <p class="brand-slogan_sub"><a href="#" role="link" class="brand-slogan_sub--green">Register Now</a></p>
         <span class="brand-slogan_sub--medium">
@@ -81,14 +81,14 @@
         <ul class="service-list">
 
             <li class="service-item">
-                <article class="service">
-                    <h1 class="service-title">Find a Band</h1>
+                <article class="service" itemscope itemtype="https://schema.org/Article">
+                    <h1 class="service-title" itemprop="name">Find a Band</h1>
                     <div class="service-container">
-                        <img class="service-img" src="/src/assets/images/pexels-thibault-trillet-167445.jpg" alt="Guirarist of Bandhop community during a live music event" width="300" >
-                        <div class="service_text-action-container">
-                            <p class="service-description">Looking for the perfect band to play at your venue? 
+                        <img class="service-img" src="/src/assets/images/pexels-thibault-trillet-167445.jpg" alt="Guirarist of Bandhop community during a live music event" width="300" itemprop="image">
+                        <div class="service_text-action-container" >
+                            <p class="service-description"itemprop="articleBody">Looking for the perfect band to play at your venue? 
                                 Here you can easily discover and connect with talented musicians in your area.</p>
-                           <a href="#" role="button"><button class="service_action-btn action-btn">FIND THE BAND</button></a>    
+                           <a  itemprop="url" href="#" role="button"><button class="service_action-btn action-btn">FIND THE BAND</button></a>    
                         </div>
                     </div>
                 </article>
@@ -97,16 +97,16 @@
 
 
             <li class="service-item">
-                <article class="service">
-                    <h1 class="service-title">Auditions</h1>
+                <article class="service" itemscope itemtype="https://schema.org/Article">
+                    <h1 class="service-title" itemprop="name">Auditions</h1>
                     <div class="service-container">
-                        <img class="service-img" src="/src/assets/images/pexels-luis-quintero-2774556.jpg" alt="people waiting for audition in the Natan teather in Uk" width="300">
-                        <div class="service_text-action-container">
-                            <p class="service-description">Discover opportunities to showcase your talent.
+                        <img class="service-img" src="/src/assets/images/pexels-luis-quintero-2774556.jpg" alt="people waiting for audition in the Natan teather in Uk" width="300" itemprop="image">
+                        <div class="service_text-action-container" >
+                            <p class="service-description"itemprop="articleBody">Discover opportunities to showcase your talent.
                                 Find your perfect match for your musical style and expertise.
                                 Join our community and change your music career.
                             </p>
-                            <a href="#" role="link"><button class="service_action-btn action-btn">JOIN AUDITIONS</button></a> 
+                            <a  itemprop="url"  href="auditions.html" role="link"><button class="service_action-btn action-btn">JOIN AUDITIONS</button></a> 
                         </div>
                     </div>
                 </article>
@@ -115,16 +115,16 @@
 
 
             <li class="service-item">
-                <article class="service">
-                    <h1 class="service-title">Live Music Events</h1>
+                <article class="service" itemscope itemtype="https://schema.org/Article">
+                    <h1 class="service-title"  itemprop="name">Live Music Events</h1>
                     <div class="service-container">
-                        <img class="service-img" src="/src/assets/images/pexels-george-webster-213207.jpg" alt="Bandhop ingaugural live music event " width="300">
+                        <img class="service-img" src="/src/assets/images/pexels-george-webster-213207.jpg" alt="Bandhop ingaugural live music event " width="300"  itemprop="image">
                         <div class="service_text-action-container">
-                            <p class="service-description">Discover the BandHop live music events in your city.
+                            <p class="service-description" itemprop="articleBody">Discover the BandHop live music events in your city.
                                 Our selected bands have the opportunity to showcase their talent in 
                                 national festival and various local venues.
                             </p>
-                            <a href="#" role="link"><button class="service_action-btn action-btn">EXPLORE LIVE MUSIC</button></a>   
+                            <a  itemprop="url" href="#" role="link"><button class="service_action-btn action-btn">EXPLORE LIVE MUSIC</button></a>   
                         </div>                    
                     </div>
                 </article>
@@ -134,16 +134,16 @@
 
 
             <li class="service-item">
-                <article class="service">
-                    <h1 class="service-title">Our Studios</h1>
+                <article class="service"  itemscope itemtype="https://schema.org/Article">
+                    <h1 class="service-title"  itemprop="name">Our Studios</h1>
                     <div class="service-container">
-                        <img  class="service-img" src="/src/assets/images/pexels-big-bag-films-8512613.jpg" alt="One of the Bandhop studios" width="300">
+                        <img  class="service-img" src="/src/assets/images/pexels-big-bag-films-8512613.jpg" alt="One of the Bandhop studios" width="300" itemprop="image">
                         <div class="service_text-action-container">
-                            <p class="service-description">Our studios provide a professional space 
+                            <p class="service-description" itemprop="articleBody">Our studios provide a professional space 
                                 for bands to perfect their music skills in preparation for 
                                 Bandhop festivals and other local venues.
                             </p>
-                            <a href="#" role="link" title="Book now one of the best studios of Bandhop"><button class="service_action-btn action-btn">BOOK NOW</button></a>   
+                            <a itemprop="url" href="#" role="link" title="Book now one of the best studios of Bandhop"><button class="service_action-btn action-btn">BOOK NOW</button></a>   
                         </div>                    
                     </div>
                 </article>
@@ -164,12 +164,13 @@
 <!--Footer-->
     <footer class="footer">
         
-    <!--Social Network Links-->
-        <ul class="social-media_list">
-            <li class="social-media_list_item"><a href="https://m.facebook.com/login/?locale=fr_FR&refsrc=deprecated"  aria-label="facebook button" role="button" class="social-media_list_item_link"><img src="/src/assets/icons/facebook (2).png" alt="Facebook page of Bandhop" title="Facebook page of BandHop - Follow us"></a></li>
-            <li class="social-media_list_item"><a href="https://www.youtube.com/"  role="button"  aria-label="youtube button" class="social-media_list_item_link"><img src="/src/assets/icons/youtube (1).png" alt="Youtube channel of Bandhop"  title="Youtube channel of BandHop - Follow us"></a></li>
-            <li class="social-media_list_item"><a href="https://twitter.com/login?lang=en"   role="button" aria-label="twitter button"  class="social-media_list_item_link"><img src="/src/assets/icons/twitter.png" alt="Twitter page of Bandhop" title="Twitter page of BandHop - Follow us" ></a></li>
-            <li class="social-media_list_item"><a href="https://www.instagram.com/"   role="button" aria-label="instagram button" class="social-media_list_item_link"><img src="/src/assets/icons/instagram (1).png" alt="Instagram page of Bandhop" title="Instagram page of BandHop - Follow us"></a></li>
+          
+        <!--Social Network Links-->
+        <ul class="social-media_list" itemscope itemtype="https://schema.org/WebPage">
+            <li class="social-media_list_item" itemprop="sharedContent"><a itemprop="url" href="https://m.facebook.com/login/?locale=fr_FR&refsrc=deprecated"  aria-label="facebook button" role="button" class="social-media_list_item_link"><img src="/src/assets/icons/facebook (2).png" alt="Facebook page of Bandhop" title="Facebook page of BandHop - Follow us"></a></li>
+            <li class="social-media_list_item" itemprop="sharedContent"><a itemprop="url" href="https://www.youtube.com/"  role="button"  aria-label="youtube button" class="social-media_list_item_link"><img src="/src/assets/icons/youtube (1).png" alt="Youtube channel of Bandhop"  title="Youtube channel of BandHop - Follow us"></a></li>
+            <li class="social-media_list_item" itemprop="sharedContent"><a itemprop="url" href="https://twitter.com/login?lang=en"   role="button" aria-label="twitter button"  class="social-media_list_item_link"><img src="/src/assets/icons/twitter.png" alt="Twitter page of Bandhop" title="Twitter page of BandHop - Follow us" ></a></li>
+            <li class="social-media_list_item" itemprop="sharedContent"><a itemprop="url" href="https://www.instagram.com/"   role="button" aria-label="instagram button" class="social-media_list_item_link"><img src="/src/assets/icons/instagram (1).png" alt="Instagram page of Bandhop" title="Instagram page of BandHop - Follow us"></a></li>
         </ul>
 
     <!--Member Aerea-->
