@@ -173,7 +173,7 @@ input#header_toggle-menu:checked + .header_toggle-menu > .header_toggle-menu_lin
 }
 
 input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
-  height: 100dvh;
+  height: 100vh;
 }
 @media screen and (min-width: 769px) {
   input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
@@ -204,8 +204,8 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
   letter-spacing: 1px;
   color: aliceblue;
   transition: top 0.3s ease;
-  height: 100dvh;
-  width: 100dvw;
+  height: 0vh;
+  width: 100vw;
 }
 
 .login-title {
@@ -213,12 +213,12 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
   text-align: center;
   padding-top: 20px;
   background-color: rgb(12, 10, 3);
-  width: 35dvw;
+  width: 35vw;
   margin: auto;
 }
 
 .login-form {
-  width: 35dvw;
+  width: 35vw;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -230,7 +230,7 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
 }
 @media screen and (max-width: 1080px) {
   .login-form {
-    width: 100dvw;
+    width: 100vw;
     min-width: 300px;
   }
 }
@@ -362,7 +362,7 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
   flex-direction: row;
   justify-content: center;
   flex-direction: column;
-  height: 0;
+  height: 0vh;
   transition: height 0.7s ease;
   background-color: black;
 }
@@ -432,24 +432,25 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
   justify-content: space-between;
   padding: 10px;
   position: fixed;
-  width: 100dvw;
+  width: 100vw;
   bottom: 0;
 }
 @media screen and (max-width: 768px) {
   .footer {
     justify-content: center;
     padding: 0;
+    width: 100vw;
   }
 }
 @media screen and (min-width: 769px) {
   .footer {
-    width: 100dvw;
+    width: 100vw;
     margin: auto;
   }
 }
 @media screen and (min-width: 1024px) {
   .footer {
-    width: 80dvw;
+    width: 80vw;
     margin: auto;
     max-width: 1500px;
     left: 50%;

@@ -10,8 +10,8 @@
     letter-spacing: 1px;
     color: aliceblue;
     transition: top 0.3s ease;
-    height: 100dvh;
-    width: 100dvw;
+    height: 0vh;
+    width: 100vw;
 }
 
 
@@ -20,13 +20,13 @@
     text-align: center;
     padding-top: 20px;
     background-color: rgb(12, 10, 3);
-    width: 35dvw;
+    width: 35vw;
     margin: auto;
 }
 
 
 .login-form{
-    width: 35dvw;
+    width: 35vw;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -37,7 +37,7 @@
     min-width: 700px;
 
         @media screen and (max-width:1080px) {
-            width: 100dvw;
+            width: 100vw;
             min-width: 300px;
         }
 }

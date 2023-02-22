@@ -1,8 +1,6 @@
 .header_nav{
     z-index: 9;
-   
-    
-
+ 
 
     //Nav-list (ul)
         &_list{
@@ -17,7 +15,7 @@
             @include flex-align-center-row;
             justify-content: center;
             flex-direction: column;
-            height: 0;
+            height: 0vh;
             transition: height 0.7s ease;
             background-color: black;
 

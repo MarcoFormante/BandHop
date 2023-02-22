@@ -63,7 +63,7 @@ input#header_toggle-menu:checked + .header_toggle-menu > .header_toggle-menu_lin
 /// When Menu Button is clicked, NavBar do the animation and show all page links (height from 0 to 100vh) if screen < 768px
 input#header_toggle-menu:checked ~ .header_nav > .header_nav_list{
 
-    height: 100dvh;
+    height: 100vh;
   
     //Responsive Min-width 769px
         @media screen and (min-width:769px){
