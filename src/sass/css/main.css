@@ -729,13 +729,12 @@ a.link-about_main, .violet-link {
 }
 
 .about-article_title {
-  font-size: 1.8em;
+  font-size: 2.2em;
   padding-bottom: 20px;
   color: rgba(113, 230, 102, 0.76);
 }
 
 .about-article-desc {
-  font-size: 1.1em;
   letter-spacing: 1.2px;
   width: 95%;
 }
@@ -769,42 +768,4 @@ a.link-about_main, .violet-link {
     display: flex;
     flex-direction: row;
   }
-}
-
-.registrattion-form {
-  max-width: 90vw;
-  margin: auto;
-}
-@media screen and (min-width: 769px) {
-  .registrattion-form {
-    max-width: 50vw;
-    font-size: 1.3em;
-    transform: translateX(10%);
-  }
-}
-
-.registration-title {
-  color: rgba(113, 230, 102, 0.76);
-  width: -moz-fit-content;
-  width: fit-content;
-  font-size: 2.5em;
-  padding-top: 30px;
-}
-
-.usertype-title {
-  color: rgba(113, 230, 102, 0.76);
-  font-size: 1.8em;
-}
-
-.registration-submit {
-  float: right;
-}
-@media screen and (min-width: 769px) {
-  .registration-submit {
-    transform: translateX(-200px);
-  }
-}
-
-select {
-  width: 250px;
 }/*# sourceMappingURL=main.css.map */
