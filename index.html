@@ -50,14 +50,47 @@
 
 
     <!--Login Area (mobile & tablet only)-->
-        <div class="login-area"><a href="#"  role="button" aria-label="member-area-button"><span class="member-area_icon"></span></a></div>
+        <div class="login-area"><a href="#"  role="button" aria-label="member-area-button"><span class="member-area_icon login-btn"></span></a></div>
 
     <!--Button CTA 'Join Now' -->
-        <a href="#" title="join now to be a part of the Bandhop community" class="btn_cta_link" role="link"><button class="btn_cta">JOIN NOW</button></a>
+        <a href="#" title="join now to be a part of the Bandhop community" class="btn_cta_link login-btn" role="link"><button class="btn_cta">JOIN NOW</button></a>
 
     </header>
 
 <!--END HEADER-->
+
+
+<!--Registration-Login // Animation in Javascript , script on the bottom of the html-->
+
+<section class="login">
+   
+    <form action="#" class="login-form">
+        <p class="login-title">Registration</p>
+
+        <div class="close-btn_login">
+            <span class="close-btn-login-line close-btn-login-line--top"></span>
+            <span class="close-btn-login-line close-btn-login-line--bottom"></span>
+        </div>
+
+        <div class="email_container">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="inpt-login">
+        </div>
+
+        <div class="password_container">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password"  class="inpt-login">
+        </div>
+
+        <div class="form-text_container">
+            <p class="form-text">Or <a href="#" class="form-text_link"><strong class="form-text--green">Login</strong></a></p>
+        </div>
+
+      
+    </form>
+</section>
+
+
 
 <!-- Main-Page -->
     <main class="main_home-page">
@@ -66,11 +99,14 @@
     <section class="slogan-section" itemscope itemtype="https://schema.org/Brand">
         <h1 class="brand-slogan" itemprop="Slogan"> BandHop - The best place to find your stage!</h2>
         <p class="brand-slogan_sub">Are you a band or venues?</p>
-        <p class="brand-slogan_sub"><a href="#" role="link" class="brand-slogan_sub--green">Register Now</a></p>
+        <p class="brand-slogan_sub"><a href="#" role="link" class="brand-slogan_sub--green login-btn">Register Now</a></p>
         <span class="brand-slogan_sub--medium">
             and take your music career to the next level!
         </span>
     </section>
+
+
+   
         
 
 
@@ -88,7 +124,7 @@
                         <div class="service_text-action-container" >
                             <p class="service-description"itemprop="articleBody">Looking for the perfect band to play at your venue? 
                                 Here you can easily discover and connect with talented musicians in your area.</p>
-                           <a  itemprop="url" href="#" role="button"><button class="service_action-btn action-btn">FIND THE BAND</button></a>    
+                           <a  itemprop="url" href="#" role="button"><button class="service_action-btn action-btn login-btn">FIND THE BAND</button></a>    
                         </div>
                     </div>
                 </article>
@@ -106,7 +142,7 @@
                                 Find your perfect match for your musical style and expertise.
                                 Join our community and change your music career.
                             </p>
-                            <a  itemprop="url"  href="auditions.html" role="link"><button class="service_action-btn action-btn">JOIN AUDITIONS</button></a> 
+                            <a  itemprop="url"  href="auditions.html" role="link"><button class="service_action-btn action-btn login-btn">JOIN AUDITIONS</button></a> 
                         </div>
                     </div>
                 </article>
@@ -124,7 +160,7 @@
                                 Our selected bands have the opportunity to showcase their talent in 
                                 national festival and various local venues.
                             </p>
-                            <a  itemprop="url" href="#" role="link"><button class="service_action-btn action-btn">EXPLORE LIVE MUSIC</button></a>   
+                            <a  itemprop="url" href="#" role="link"><button class="service_action-btn action-btn login-btn">EXPLORE LIVE MUSIC</button></a>   
                         </div>                    
                     </div>
                 </article>
@@ -143,7 +179,7 @@
                                 for bands to perfect their music skills in preparation for 
                                 Bandhop festivals and other local venues.
                             </p>
-                            <a itemprop="url" href="#" role="link" title="Book now one of the best studios of Bandhop"><button class="service_action-btn action-btn">BOOK NOW</button></a>   
+                            <a itemprop="url" href="#" role="link" title="Book now one of the best studios of Bandhop"><button class="service_action-btn action-btn login-btn">BOOK NOW</button></a>   
                         </div>                    
                     </div>
                 </article>
@@ -155,7 +191,7 @@
     </section>
  
     <!-- Button Cta hidden while screen > 768px -->
-        <a href="#" role="link" title="join now to be a part of the Bandhop community"  class="btn_cta_link"><button class="btn_cta btn_cta--bottom">JOIN NOW</button></a>
+        <a href="#" role="link" title="join now to be a part of the Bandhop community"  class="btn_cta_link login-btn"><button class="btn_cta btn_cta--bottom">JOIN NOW</button></a>
 
     </main>
 <!--End Main-->
@@ -174,8 +210,8 @@
         </ul>
 
     <!--Member Aerea-->
-        <div class="member-area">
-            <a href="#" id="member-area-button" class="member-area_link" role="button" title="Log-in to access in your personal area">
+        <div class="member-area login-btn">
+            <a href="#" id="member-area-button" class="member-area_link " role="button" title="Log-in to access in your personal area">
                 <p class="member-area_text">Member Area</p>
                 <span class="member-area_icon"></span>
             </a>
@@ -183,6 +219,33 @@
 
     </footer>
 <!--End Footer-->
+
+
+
+
+<!-- script Animation Registration-Login-->
+
+    <script type="text/javascript">
+
+        const loginBtn = document.querySelectorAll(".login-btn");
+
+        loginBtn.forEach(btn => {
+            btn.addEventListener("click",function (e) {
+            e.preventDefault();
+            document.querySelector(".login").classList.add("loginOpen");
+            });
+        })
+      
+        
+
+        const closeBtnLogin = document.querySelector(".close-btn_login");
+        closeBtnLogin.addEventListener("click", function () {
+        
+        document.querySelector(".login").classList.remove("loginOpen")
+        })
+
+    </script>
+
 
 </body>
 </html>

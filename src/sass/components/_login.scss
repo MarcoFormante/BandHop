@@ -1,0 +1,121 @@
+
+.login{
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    z-index: 11;
+    transform: translateX(-50%);
+    background-color: rgba(12, 10, 3, 0.522);
+    letter-spacing: 1px;
+    color: aliceblue;
+    transition: top 0.3s ease;
+    height: 100dvh;
+    width: 100dvw;
+}
+
+
+.login-title{
+    font-size: 1.4em;
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgb(12, 10, 3);
+    width: 35dvw;
+    margin: auto;
+}
+
+
+.login-form{
+    width: 35dvw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(12, 10, 3);
+    position: relative;
+    min-width: 700px;
+
+        @media screen and (max-width:1080px) {
+            width: 100dvw;
+            min-width: 300px;
+        }
+}
+
+
+.email_container,.password_container{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    width: 50%;
+
+
+    @media screen and (max-width:1080px) {
+        width: 70%;
+
+        max-width: 400px;
+    }
+    
+}
+
+
+.inpt-login{
+    width: 100%;
+    height: 25px;
+    appearance: none;
+   border-radius: 4px;
+   border:none;
+}
+
+
+.form-text_link{
+    text-decoration: none;
+}
+
+
+.form-text--green{
+    color: rgb(14, 214, 14);
+    letter-spacing: 1.2px;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+
+
+.close-btn_login{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+ 
+}
+
+.close-btn-login-line{
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(255, 0, 0);
+}
+
+
+
+.close-btn-login-line--top{
+    transform: rotate(-45deg) translateX(-2px);
+}
+
+.close-btn-login-line--bottom{
+    transform: rotate(45deg) translateX(-1px);
+
+}
+
+
+
+
+.loginOpen{
+   top:0; 
+}
+  
