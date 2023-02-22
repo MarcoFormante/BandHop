@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -42,9 +41,14 @@ main {
 }
 
 body {
-  font-family: "Bebas Neue", cursive;
+  font-family: Bebas, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-display: auto;
 }
 
+@font-face {
+  font-family: "Bebas";
+  src: url(/src/assets/fonts/BebasNeue-Regular.ttf);
+}
 .brand-link {
   text-decoration: none;
   min-width: -moz-fit-content;
@@ -252,6 +256,7 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
           appearance: none;
   border-radius: 4px;
   border: none;
+  text-indent: 4px;
 }
 
 .form-text_link {
@@ -521,7 +526,7 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
   word-spacing: 1px;
   letter-spacing: 1.5px;
   font-size: calc(1.5em + 1.5vw);
-  text-shadow: 4px 1px 1px rgba(2, 129, 119, 0.4039215686);
+  text-shadow: 4px 1px 1px rgba(0, 0, 0, 0.4039215686);
   z-index: 8;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -773,7 +778,7 @@ input#header_toggle-menu:checked ~ .header_nav > .header_nav_list {
 
 .audition_action-btn {
   position: absolute;
-  top: 40%;
+  top: 20%;
   right: 10px;
   transform: translateY(-50%);
   box-shadow: 0px 0px 8px rgb(231, 231, 231);

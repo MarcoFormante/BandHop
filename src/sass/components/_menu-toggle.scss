@@ -1,6 +1,5 @@
 // Menu Btn toggle , visible only on mobile
 .header_toggle-menu{
-
     width: 35px;
     height: 25px;
     display: block;
@@ -61,7 +60,7 @@ input#header_toggle-menu:checked + .header_toggle-menu > .header_toggle-menu_lin
 
 
 //NAV-LIST
-/// When Menu Button is clicked , the NavBar do the animation and show all links (height from 0 to 100vh)
+/// When Menu Button is clicked, NavBar do the animation and show all page links (height from 0 to 100vh) if screen < 768px
 input#header_toggle-menu:checked ~ .header_nav > .header_nav_list{
 
     height: 100dvh;

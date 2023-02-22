@@ -12,7 +12,7 @@
     cursor: pointer;
     transition: all 0.2s ease;
     
-
+//Btn JOIN NOW clicked
         &:active{
             color: $brand-color;
             background-color: $white-color;
@@ -28,7 +28,7 @@
         }
 
 
-
+// BTN JOIN NOW Bottom of the page while screen < 768px
         &--bottom{
             display: block;
             font-size: calc(1vw + 1.3em);
@@ -48,8 +48,8 @@
             width: 200px;
             margin: 10px auto;
 
+
                 @media screen and (min-width:769px) {
-                    
                     width: fit-content;
                     margin: 0;
                   
@@ -60,7 +60,7 @@
 }
 
 
-//Responsive Min-width:769px
+
 
 
 
